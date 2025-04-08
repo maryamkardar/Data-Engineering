@@ -7,3 +7,6 @@ print("your BMI", BMI, sep= ":")
 
 cleaning console ---> ctrl + L
 
+x1 = True
+X2 = False
+x1 + x2 = 0 + 1 = 1
