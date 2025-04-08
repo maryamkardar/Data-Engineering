@@ -1,5 +1,7 @@
 Data Processing with Python
 
+First Session:🙌
+
 print("your BMI is:",{BMI})
 print(f"your BMI is: {BMI}")
 print('your BMI is:' + str(BMI))
@@ -38,4 +40,18 @@ Piping/Chaining
 Piping: Cat file.txt | grep "Keyword" | Sort
 Chaining: # Chaining inbuilt functions
 result = text.strip().upper().replace("WORLD", "FRIEND")
+
+Funtions:(indentation is very important)
+def FuncName(arg):
+    return(expr)
+
+Sometimes arg is not needed, 
+e.g: # Current date and time
+now = datetime.now()
+
+explanation about Functions:
+help(sum)
+?sum
+SPYDER---> tools-->preferences--->Help--> active all sections
+
 
