@@ -32,3 +32,10 @@ mydict = dict(zip(keys,values))
 mutable(changeable): List, Dict values, Set
 immutable(unchangeable): Dict keys, tuples, floats, ints, strs,...
 
+Functional Programming(FP) / Object_Oriented Programming (OOP)
+
+Piping/Chaining
+Piping: Cat file.txt | grep "Keyword" | Sort
+Chaining: # Chaining inbuilt functions
+result = text.strip().upper().replace("WORLD", "FRIEND")
+
