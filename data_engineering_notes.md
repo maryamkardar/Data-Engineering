@@ -18,8 +18,17 @@ Data type is very effective on the result.
 #Defensive Programming : For preventing Errors
 
 #Complex Types: List[], Dict{}
+list works with indexes
+dict works with keys
 
 #Slicing rules on List(names[a, b, c])
 List[start:End] ----> End is exclusive
 del variable, del names[0]-------> Delete a variable
 ['Maryam'] + names
+
+Dictionary{Key:Value}
+mydict = dict(zip(keys,values))
+
+mutable(changeable): List, Dict values, Set
+immutable(unchangeable): Dict keys, tuples, floats, ints, strs,...
+
