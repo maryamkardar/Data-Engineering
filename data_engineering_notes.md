@@ -85,6 +85,69 @@ lst.reverse()
 lst.pop()
 lst.pop(index)
 
+# Dictionary : pair of key, value (key,value)
+DictName.keys()---> key
+DictName.values()---> value
+DictName.items() ---> (key,value)
+
+DictName[key] ---> value
+for slicing a dictionary by Index, it should be converted to a list
+a dictinary works by keys and a list works by indexes
+
+list(DictName.keys())[0]
+list(DictName.items())[0][0]
+
+# adding new item to a dict
+DictName[key]=value 
+# deleting an item from a dict
+del DictName[key]
+DictName[key].pop(key)
+# changing an item in a dict
+DictName[key]= new value 
+
+*When order is important ,we use **lists** and when finding values based on keys is important, **Dictionaries** should be considered.*
+*NOSQL logic is using several nested Dictionaries*
+
+Example of a nested dictionary:
+italy = {'capital': 'rome', 'population': 59.83 }
+spain = {'capital': 'madrid', 'population': 46.77 }
+france = {'capital': 'paris', 'population': 66.03 }
+germany= {'capital': 'berlin', 'population': 80.62 }
+norway= {'capital': 'oslo', 'population': 5.084 }
+europe = {'italy': italy, 'spain': spain, 'france': france, 'germany': germany, 'norway': norway}
+europe
+europe['france']
+result = europe['france']
+result
+result['capital']
+europe['france']
+europe['france']['capital']
+
+# in applications
+'Ali' in 'alireza'   ---> False
+'Ali'.lower() in 'alireza' ---> True
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+5 in lst   ---> True
+11 in lst  ---> False
+lst2 = ['ali', 'sadeghi']
+'ali' in lst2  ---> True
+'akbar' in lst2  ---> False
+familyDict
+familyDict['father'] = 175
+familyDict
+175 in familyDict  ---> True
+'father' in familyDict  ---> False
+'son2' in familyDict  ---> True
+'180' in familyDict  ---> False
+familyDict.values()  
+170 in familyDict.values()  ---> True
+
+
+
+
+
+
+
 
 
 
