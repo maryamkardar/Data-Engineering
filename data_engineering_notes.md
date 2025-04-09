@@ -60,6 +60,22 @@ sorted(lst, reverse=True)
 
 using cheat sheet is very important
 
+String Methods:
+'ali'.capitilize
+'ali'.upper()
+'Ali'.lower()
+'maryam hosseini'.count('a')
+'maryam hosseini'.count('gh')
+'maryam hosseini'.index('i')
+'maryam hosseini'.index('i',3) ---> from third element afterward
+'maryam hosseini'.split() ---> split by distance
+'maryam hosseini'.split('i') ---> split by i
+list('maryam hosseini') break down into each letter
+
+
+
+
+
 
 
 
