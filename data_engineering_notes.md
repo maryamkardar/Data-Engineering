@@ -72,6 +72,18 @@ String Methods:
 'maryam hosseini'.split('i') ---> split by i
 list('maryam hosseini') break down into each letter
 
+Iterable / Iterator
+# gready methods
+lst = [1,2,1,3,1,4]
+lst.index
+lst.count(1)
+lst.append(1)
+lst.remove(1)
+lst.reverse()
+
+
+lst.pop()
+lst.pop(index)
 
 
 
