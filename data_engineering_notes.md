@@ -54,4 +54,13 @@ help(sum)
 ?sum
 SPYDER---> tools-->preferences--->Help--> active all sections
 
+a---> z : z has bigger Ascii code for sorting (Ascci code of Capital letter is bigger than small letter A > a)
+len(lst) number of elements in mentioned list 
+sorted(lst, reverse=True)
+
+using cheat sheet is very important
+
+
+
+
 
