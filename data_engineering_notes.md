@@ -7,29 +7,29 @@ print(f"your BMI is: {BMI}")<br>
 print('your BMI is:' + str(BMI))<br>
 print("your BMI", BMI, sep= ":")<br>
 
-cleaning console ---> ctrl + L
+cleaning console ---> ctrl + L<br>
 
-x1 = True
-X2 = False
-x1 + x2 = 0 + 1 = 1
+x1 = True<br>
+X2 = False<br>
+x1 + x2 = 0 + 1 = 1<br>
 
-str1 + str2 = Concat
+str1 + str2 = Concat<br>
 
-Data type is very effective on the result.
+Data type is very effective on the result.<br>
 
-#Defensive Programming : For preventing Errors
+#Defensive Programming : For preventing Errors<br>
 
-#Complex Types: List[], Dict{}
-list works with indexes
-dict works with keys
+#Complex Types: List[], Dict{}<br>
+list works with indexes<br>
+dict works with keys<br>
 
-#Slicing rules on List(names[a, b, c])
-List[start:End] ----> End is exclusive
-del variable, del names[0]-------> Delete a variable
-['Maryam'] + names
+#Slicing rules on List(names[a, b, c])<br>
+List[start:End] ----> End is exclusive<br>
+del variable, del names[0]-------> Delete a variable<br>
+['Maryam'] + names<br>
 
-Dictionary{Key:Value}
-mydict = dict(zip(keys,values))
+Dictionary{Key:Value}<br>
+mydict = dict(zip(keys,values))<br>
 
 mutable(changeable): List, Dict values, Set
 immutable(unchangeable): Dict keys, tuples, floats, ints, strs,...
