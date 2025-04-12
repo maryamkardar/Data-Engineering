@@ -348,23 +348,23 @@ infoDF.index<br>
 infoDF.columns[2]<br>
 infoDF.columns[2] = 'field'<br>
 infoDF.index<br>
-infoDF.index[0] = 'a'
-infoDF.index = ['a', 'b', 'c']
-infoDF
-countries = ['United States', 'Australia', 'Japan','India', 'Russia', 'Morocco', 'Egypt']
-drivesRight = [True, False, False, False, True, True, True]
-carsPerCapita = [809, 731, 588, 18, 200, 70, 45]
-carsInfo = pd.DataFrame({'country': countries, 'dr': drivesRight, 'cpc': carsPerCapita})
-carsInfo
-carsInfo.index = ['USA', 'AUS', 'JAP', 'IND', 'RUS', 'MOR', 'EGP']
-carsInfo
-input()
-input('please enter your name:' )
-name = input('please enter your name:' )
-name
-age = input('please enter your age: ' )
-age
-int(age)
+infoDF.index[0] = 'a'<br>
+infoDF.index = ['a', 'b', 'c']<br>
+infoDF<br>
+countries = ['United States', 'Australia', 'Japan','India', 'Russia', 'Morocco', 'Egypt']<br>
+drivesRight = [True, False, False, False, True, True, True]<br>
+carsPerCapita = [809, 731, 588, 18, 200, 70, 45]<br>
+carsInfo = pd.DataFrame({'country': countries, 'dr': drivesRight, 'cpc': carsPerCapita})<br>
+carsInfo<br>
+carsInfo.index = ['USA', 'AUS', 'JAP', 'IND', 'RUS', 'MOR', 'EGP']<br>
+carsInfo<br>
+input()<br>
+input('please enter your name:' )<br>
+name = input('please enter your name:' )<br>
+name<br>
+age = input('please enter your age: ' )<br>
+age<br>
+int(age)<br>
 
 
 
