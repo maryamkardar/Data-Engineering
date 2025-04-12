@@ -332,22 +332,22 @@ np.matrix(range(100))
 np.matrix(range(100)).reshape(4, 25)
 
 # Pandas
-import pandas as pd
-names = ['ali', 'hassan', 'meysam']
-family = ['sadeghi aghili', 'eskandari', 'kermani']
-age = [36, 36, 41]
-major = ['Automation', 'Programming', 'Computer Science']
-info = {'name':names, 'family': family, 'major': major, 'age': age}
-info
-pd.DataFrame(info)
-infoDF = pd.DataFrame(info)
-infoDF
-type(infoDF)
-infoDF.columns
-infoDF.index
-infoDF.columns[2]
-infoDF.columns[2] = 'field'
-infoDF.index
+import pandas as pd <br>
+names = ['ali', 'hassan', 'meysam']<br>
+family = ['sadeghi aghili', 'eskandari', 'kermani']<br>
+age = [36, 36, 41]<br>
+major = ['Automation', 'Programming', 'Computer Science']<br>
+info = {'name':names, 'family': family, 'major': major, 'age': age}<br>
+info<br>
+pd.DataFrame(info)<br>
+infoDF = pd.DataFrame(info)<br>
+infoDF<br>
+type(infoDF)<br>
+infoDF.columns<br>
+infoDF.index<br>
+infoDF.columns[2]<br>
+infoDF.columns[2] = 'field'<br>
+infoDF.index<br>
 infoDF.index[0] = 'a'
 infoDF.index = ['a', 'b', 'c']
 infoDF
