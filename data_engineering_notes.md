@@ -31,15 +31,15 @@ del variable, del names[0]-------> Delete a variable<br>
 Dictionary{Key:Value}<br>
 mydict = dict(zip(keys,values))<br>
 
-mutable(changeable): List, Dict values, Set
-immutable(unchangeable): Dict keys, tuples, floats, ints, strs,...
+mutable(changeable): List, Dict values, Set<br>
+immutable(unchangeable): Dict keys, tuples, floats, ints, strs,...<br>
 
-Functional Programming(FP) / Object_Oriented Programming (OOP)
+Functional Programming(FP) / Object_Oriented Programming (OOP)<br>
 
-Piping/Chaining
-Piping: Cat file.txt | grep "Keyword" | Sort
-Chaining: # Chaining inbuilt functions
-result = text.strip().upper().replace("WORLD", "FRIEND")
+*Piping/Chaining*<br>
+Piping: Cat file.txt | grep "Keyword" | Sort<br>
+Chaining: # Chaining inbuilt functions<br>
+result = text.strip().upper().replace("WORLD", "FRIEND")<br>
 
 Funtions:(indentation is very important)
 def FuncName(arg):
