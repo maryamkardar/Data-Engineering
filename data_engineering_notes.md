@@ -367,42 +367,42 @@ age<br>
 int(age)<br>
 
 ## ---(Thu Oct 31 13:59:32 2024)---
-import pandas as pd
-pd.read_csv('H:\Work\Python\Examples\1-basics\teachers.csv')
-pd.read_csv('H:\\Work\\Python\\Examples\\1-basics\\teachers.csv')
-pd.read_csv('H:/Work/Python/Examples/1-basics/teachers.csv')
-pd.read_csv(r'H:\Work\Python\Examples\1-basics\teachers.csv') # raw text
-path = input()
-path
-pd.read_csv(path)
-teachers = pd.read_csv(path)
-teachers.columns
-teachers.index
-teachers = pd.read_csv(path, index_col=0)
-teachers
-teachers.index
-%clear
-teachers
-teachers[:,2]
-teachers
-np.arange(12)
-import numpy as np
-np.arange(12)
-np.arange(12).reshape(3,4)
-mat = np.arange(12).reshape(3,4)
-mat[0, 2]
-mat[0,:]
-mat[:,1]
-mat[1, [0, 2, 3]]
-teachers
-teachers[[1,2]:]
-%clear
-teachers
-teachers[1:,:]
-%clear
-teachers
-teachers[1:]
-teachers[1:3]
+import pandas as pd<br>
+pd.read_csv('H:\Work\Python\Examples\1-basics\teachers.csv')<br>
+pd.read_csv('H:\\Work\\Python\\Examples\\1-basics\\teachers.csv')<br>
+pd.read_csv('H:/Work/Python/Examples/1-basics/teachers.csv')<br>
+pd.read_csv(r'H:\Work\Python\Examples\1-basics\teachers.csv') # raw text<br>
+path = input()<br>
+path<br>
+pd.read_csv(path)<br>
+teachers = pd.read_csv(path)<br>
+teachers.columns<br>
+teachers.index<br>
+teachers = pd.read_csv(path, index_col=0)<br>
+teachers<br>
+teachers.index<br>
+%clear<br>
+teachers<br>
+teachers[:,2]<br>
+teachers<br>
+np.arange(12)<br>
+import numpy as np<br>
+np.arange(12)<br>
+np.arange(12).reshape(3,4)<br>
+mat = np.arange(12).reshape(3,4)<br>
+mat[0, 2]<br>
+mat[0,:]<br>
+mat[:,1]<br>
+mat[1, [0, 2, 3]]<br>
+teachers<br>
+teachers[[1,2]:]<br>
+%clear<br>
+teachers<br>
+teachers[1:,:]<br>
+%clear<br>
+teachers<br>
+teachers[1:]<br>
+teachers[1:3]<br>
 teachers[1:2]
 teachers
 teachers[1:3]
