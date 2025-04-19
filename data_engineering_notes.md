@@ -826,20 +826,20 @@ for rowIndex, row in teachers.iterrows():
     # teachers.loc[rowIndex, 'count2'] = len(row['name'])    
     row['count3'] = len(row['name'])
 teachers
-teachers.name
-teachers.name.apply(len)
-teachers['count3'] = teachers.name.apply(len)
-teachers
-len(teachers.name)
-len("ali sadeghi")
-cars
-cars.country
-cars.country.apply(upper)
-"Ali Sadeghi Aghili".upper()
-cars.country.apply(str.upper)
-for rowIndex, row in cars.iterrows():
-    cars.loc[rowIndex,'capital'] = row['country'].upper()
-cars
+teachers.name<br>
+teachers.name.apply(len)<br>
+teachers['count3'] = teachers.name.apply(len)<br>
+teachers<br>
+len(teachers.name)<br>
+len("ali sadeghi")<br>
+cars<br>
+cars.country<br>
+cars.country.apply(upper)<br>
+"Ali Sadeghi Aghili".upper()<br>
+cars.country.apply(str.upper)<br>
+for rowIndex, row in cars.iterrows():<br>
+    cars.loc[rowIndex,'capital'] = row['country'].upper()<br>
+cars<br>
 
 
 
