@@ -807,17 +807,17 @@ teachers
 teachers['count'] = 0
 for rowIndex, row in teachers.iterrows():    
     row['count'] = len(row['name'])
-teachers
-name_lengths = []
-for name in teachers['name']:    
-    name_lengths.append(len(name))
-name_lengths
-teachers['count'] = name_lengths
-teachers
-for rowIndex, row in teachers.iterrows():    
-    teachers.loc[rowIndex, 'count2'] = len(row['name'])
-teachers
-%clear
+teachers<br>
+name_lengths = []<br>
+for name in teachers['name']:<br>    
+    name_lengths.append(len(name))<br>
+name_lengths<br>
+teachers['count'] = name_lengths<br>
+teachers<br>
+for rowIndex, row in teachers.iterrows():    <br>
+    teachers.loc[rowIndex, 'count2'] = len(row['name'])<br>
+teachers<br>
+%clear<br>
 for rowIndex, row in teachers.iterrows():    
     # teachers.loc[rowIndex, 'count2'] = len(row['name'])    
     row['count2'] = len(row['name'])
