@@ -366,6 +366,481 @@ age = input('please enter your age: ' )<br>
 age<br>
 int(age)<br>
 
+## ---(Thu Oct 31 13:59:32 2024)---
+import pandas as pd
+pd.read_csv('H:\Work\Python\Examples\1-basics\teachers.csv')
+pd.read_csv('H:\\Work\\Python\\Examples\\1-basics\\teachers.csv')
+pd.read_csv('H:/Work/Python/Examples/1-basics/teachers.csv')
+pd.read_csv(r'H:\Work\Python\Examples\1-basics\teachers.csv') # raw text
+path = input()
+path
+pd.read_csv(path)
+teachers = pd.read_csv(path)
+teachers.columns
+teachers.index
+teachers = pd.read_csv(path, index_col=0)
+teachers
+teachers.index
+%clear
+teachers
+teachers[:,2]
+teachers
+np.arange(12)
+import numpy as np
+np.arange(12)
+np.arange(12).reshape(3,4)
+mat = np.arange(12).reshape(3,4)
+mat[0, 2]
+mat[0,:]
+mat[:,1]
+mat[1, [0, 2, 3]]
+teachers
+teachers[[1,2]:]
+%clear
+teachers
+teachers[1:,:]
+%clear
+teachers
+teachers[1:]
+teachers[1:3]
+teachers[1:2]
+teachers
+teachers[1:3]
+teachers[1:]
+teachers['BI':'DB']
+teachers
+teachers['name']
+type(teachers['name'])
+teachers['age']
+teachers['major']
+teachers[['major', 'age']]
+teachers
+selectedColumns = [['name', 'family', 'age']]
+teachers[selectedColumns]
+selectedColumns = ['name', 'family', 'age']
+teachers[selectedColumns]
+teachers.age
+teachers.name
+teachers.major
+teachers
+%clear
+teachers
+teachers[1:3]
+teachers[1:3][['name', 'family']]
+teachers[['name', 'family']]
+df = teachers[['name', 'family']]
+df
+df[1:3]
+teachers[['name', 'family']][1:3]
+%clear
+# teachers.loc
+# teachers.iloc
+teachers
+teachers.loc['DB']
+teachers.loc['name']
+teachers.loc[:, 'name']
+teachers.loc['DS']
+teachers.loc[['DS']]
+teachers.loc['BI':'DB']
+teachers.loc['BI':'DB', :]
+teachers.loc[:, 'name':'age']
+teachers.loc[:, ['name','age']]
+teachers
+teachers.iloc[1:2, :]
+teachers.iloc[1:3, :]
+teachers.iloc[1:3, 2:4]
+teachers.iloc[1:3, [2,4]]
+teachers.iloc[1:3, [2,3]]
+pd.read_csv(r'H:\Work\Python\Examples\1-basics\cars.csv') # raw text
+pd.read_csv(r'H:\Work\Python\Examples\1-basics\cars.csv', index_col = 0) # raw text
+cars = pd.read_csv(r'H:\Work\Python\Examples\1-basics\cars.csv', index_col = 0) # raw text
+%clear
+cars.country
+cars['country']
+cars[['country']]
+cars
+cars.iloc[:, 1]
+cars
+cars.loc[:, 'country']
+cars.loc[:, 'country':'drives Right']
+cars.loc[:, 'country':'drives right']
+cars.iloc[:, 1:]
+cars
+cars[5:6]
+cars[5:6]['drives right']
+np.arange(5)
+nums = np.arange(5)
+nums
+nums[3]
+nums[-2]
+nums[-1]
+cars
+cars[-2:-1]
+cars[-2:-1]['drives right']
+cars
+%clear
+# >, <, ==, >=, <=, !=
+'ali' == 'Ali'
+3 < 12
+5 > 12
+# and, or, not
+5 == 12
+not 5 == 12
+5 != 12
+5 > 3 and 5 < 7
+2 > 7
+2 > 7 | 4 < 5
+2 > 7 or 4 < 5
+nums
+nums = np.arange(10)
+nums
+numsu > 5
+nums > 5
+nums[nums > 5]
+nums
+nums > 2 and nums < 7
+# np.logical_and()
+# np.logical_or()
+# np.logical_not()
+np.logical_and(nums > 2, nums < 7)
+nums[np.logical_and(nums > 2, nums < 7)]
+nums
+%clear
+cars
+cars['cars per cap']
+cars['cars per cap'] > 500
+cars[cars['cars per cap'] > 500]
+cars
+cars['cars per cap']
+np.logical_and(cars['cars per cap'] > 100, cars['cars per cap'] < 500)
+cars[np.logical_and(cars['cars per cap'] > 100, cars['cars per cap'] < 500)]
+%clear
+x = 6
+if x < 2:
+    True
+x = 6
+if x < 2:
+    True
+else:
+    False
+x = 6
+if x < 2:
+    flag = True
+else:
+    flag = False
+
+flag
+x = 0
+if x < 2:
+    flag = True
+else:
+    flag = False
+
+flag
+x = 1
+if x % 2 == 0:
+    print('dividable by 2')
+else:
+    print('not dividable by 2')
+x = 2
+if x % 2 == 0:
+    print('dividable by 2')
+else:
+    print('not dividable by 2')
+x = 1
+if x % 2 == 0:
+    print('dividable by 2')
+elif x % 3 == 0:
+    print('dividable by 3')
+else:
+    print('neither dividable by 2 nor 3')
+x = 2
+if x % 2 == 0:
+    print('dividable by 2')
+elif x % 3 == 0:
+    print('dividable by 3')
+else:
+    print('neither dividable by 2 nor 3')
+x = 3
+if x % 2 == 0:
+    print('dividable by 2')
+elif x % 3 == 0:
+    print('dividable by 3')
+else:
+    print('neither dividable by 2 nor 3')
+x = 4
+if x % 2 == 0:
+    print('dividable by 2')
+elif x % 3 == 0:
+    print('dividable by 3')
+else:
+    print('neither dividable by 2 nor 3')
+x = 5
+if x % 2 == 0:
+    print('dividable by 2')
+elif x % 3 == 0:
+    print('dividable by 3')
+else:
+    print('neither dividable by 2 nor 3')
+x = 1
+while x < 10:
+    print(x)
+x = 1
+while x < 10:
+    print(x)
+    x += 1 # x = x + 1
+print(x)
+error = 50
+
+while error > 1:
+    print(error)
+    error /= 4 # error = error / 4
+
+print(error)
+names = ['Ali', 'Babak', 'Fatemeh', 'Mosa', 'Maryam', 'Taha', 'Tahere']
+names = ['Ali', 'Babak', 'Fatemeh', 'Mosa', 'Maryam', 'Taha', 'Tahere']
+for valu in names:
+    print(name)
+names = ['Ali', 'Babak', 'Fatemeh', 'Mosa', 'Maryam', 'Taha', 'Tahere']
+for value in names:
+    print(value)
+for x in names:
+    print(x)
+for alaki in names:
+    print(alaki)
+for name in names:
+    print(name)
+for name in names:
+    print(name)
+    if name == "taha":
+        print("found!")
+        break
+for name in names:
+    print(name)
+    if name == "Taha":
+        print("found!")
+        break
+for name in names:
+    if name == "Taha":
+        continue
+    print(name)
+ind = 0
+for name in names:
+    print(ind, name, sep = ": ")
+    ind += 1
+len(names)
+for num in len(names):
+    print(num)
+range(len(names))
+for num in range(len(names)):
+    print(num)
+for ind in range(len(names)):
+    print(ind, names[ind], sep = ": ")
+for value in enumerate(names):
+    print(value)
+nums = [1, 2]
+nums
+num1, num2 = nums
+num1
+num2
+for index, name in enumerate(names):
+    print(index, name, sep = ": ")
+nums = [1, 2, 3, 4]
+a, b, c,  d = nums
+a
+b
+c
+d
+enumerate(names)
+type(enumerate(names))
+range(10)
+list(range(10))
+list(enumerate(names))
+len(list(enumerate(names)))
+house = [["hallway", 11.25], 
+         ["kitchen", 18.0], 
+         ["living room", 20.0], 
+         ["bedroom", 10.75], 
+         ["bathroom", 9.50]]
+for value in house:
+    print(value)
+for room, size in house:
+    print(room, size, sep = ": ")
+%clear
+matrix = np.arange(9).reshape(3, 3)
+matrix
+for value in enumerate(matrix):
+    print(value)
+for rowIndex, row in enumerate(matrix):
+    for value in enumerate(row):
+        print(value)
+matrix
+for rowIndex, row in enumerate(matrix):
+    for colIndex, value in enumerate(row):
+        print("(", str(rowIndex), ', ', str(colIndex), '): ', str(value))
+for rowIndex, row in enumerate(matrix):
+    for colIndex, value in enumerate(row):
+        print("(", str(rowIndex), ', ', str(colIndex), '): ', str(value), sep = "")
+for char in "Seyyedeh Maryam Hosseini":
+    print(char)
+house
+houseDict = {}
+for room, size in house:
+    houseDict[room] = size
+houseDict
+for value in houseDict:
+    print(value)
+for key in houseDict:
+    print(houseDict[key])
+for key in houseDict:
+    print(key, houseDict[key], sep = ": ")
+for key in houseDict.keys():
+    print(key)
+for value in houseDict.values():
+    print(value)
+for value in houseDict.itmes():
+    print(value)
+for value in houseDict.items():
+    print(value)
+for key, value in houseDict.items():
+    print(key, value, sep = ": ")
+%clear
+dict(house)
+%clear
+nums = [223, 108, 95]
+np.array(nums)
+npNums = np.array(nums)
+for num in npNums:
+    print(num)
+height = [1.84, 1.78, 2.05]
+weight = [76, 83, 105]
+height = [1.84, 1.78, 2.05]
+weight = [76, 83, 105]
+npInfo = np.array([height, weight])
+for value in npInfo:
+    print(value)
+for value in npInfo.T:
+    print(value)
+for value in npInfo:
+    print(value)
+for row in npInfo:
+    for value in row:
+        print(value)
+npInfo.reshape(-1)
+for value in npInfo.reshape(-1):
+    print(value)
+for value in np.nditer(npInfo):
+    print(value)
+teachers
+for value in teachers:
+    print(value)
+for column in teachers:
+    print(teachers[column])
+    print("==============")
+for column in teachers:
+    print(teachers[row:])
+    print("==============")
+for row in teachers:
+    print(teachers[row:])
+    print("==============")
+teachers.index
+teachers.shape
+teachers.shape[0]
+for rowIndex in range(teachers.shape[0]):
+    print(teachers.iloc[rowIndex,:])
+    print("==============")
+teachers.index
+for rowIndex in teachers.index:
+    print(rowIndex)
+for rowIndex in teachers.index:
+    print(teachers.loc[rowIndex, :])
+for rowIndex in teachers.index:
+    print(teachers.loc[rowIndex, :])
+    print("==============")
+teachers.iterrows()
+for value in teachers.iterrows():
+    print(value)
+for value in teachers.iterrows():
+    print(value)
+    print("==============")
+for rowIndex, row in teachers.iterrows():
+    print(row)
+    print("==============")
+for rowIndex, row in teachers.iterrows():
+    print(rowIndex)
+    print("==============")
+%clear
+teachers
+# DS: Ali Sadeghi Aghili
+# BI: Babak Pirooz
+for col in teachers.index:    
+    print(col,teachers.loc[col,"name":"family"], sep=": ")
+for rowIndex, row in teachers.iterrows():    
+    print(rowIndex, row,[:2], sep = ":")
+for rowIndex, row in teachers.iterrows():    
+    print(rowIndex, row[,:2], sep = ":")
+for rowindex, row in techers.itrrows(): 
+    print(rowindex, row, sep=" :")
+for rowindex, row in techers.itrrows(): 
+    print(row['name'], row['family'])
+for rowindex, row in teachers.itrrows(): 
+    print(row['name'], row['family'])
+for rowindex, row in teachers.iterrows(): 
+    print(row['name'], row['family'])
+for rowindex, row in teachers.iterrows(): 
+    print(rowIndex, row['name'], row['family'])
+for rowindex, row in teachers.iterrows(): 
+    print(rowindex, row['name'], row['family'])
+for rowindex, row in teachers.iterrows(): 
+    print(rowindex + ': ' + row['name'] + ' ' + row['family'])
+teachers
+teachers['user'] = "user001"
+teachers
+del teachers['user']
+teachers
+for rowIndex, row in teachers.iterrows():    
+    row['count'] = len(row['name'])
+teachers
+for rowIndex, row in teachers.iterrows():    
+    row['count'] = len(row['name'])
+teachers
+teachers['count'] = 0
+for rowIndex, row in teachers.iterrows():    
+    row['count'] = len(row['name'])
+teachers
+name_lengths = []
+for name in teachers['name']:    
+    name_lengths.append(len(name))
+name_lengths
+teachers['count'] = name_lengths
+teachers
+for rowIndex, row in teachers.iterrows():    
+    teachers.loc[rowIndex, 'count2'] = len(row['name'])
+teachers
+%clear
+for rowIndex, row in teachers.iterrows():    
+    # teachers.loc[rowIndex, 'count2'] = len(row['name'])    
+    row['count2'] = len(row['name'])
+teachers
+for rowIndex, row in teachers.iterrows():    
+    # teachers.loc[rowIndex, 'count2'] = len(row['name'])    
+    row['count3'] = len(row['name'])
+teachers
+teachers.name
+teachers.name.apply(len)
+teachers['count3'] = teachers.name.apply(len)
+teachers
+len(teachers.name)
+len("ali sadeghi")
+cars
+cars.country
+cars.country.apply(upper)
+"Ali Sadeghi Aghili".upper()
+cars.country.apply(str.upper)
+for rowIndex, row in cars.iterrows():
+    cars.loc[rowIndex,'capital'] = row['country'].upper()
+cars
+
 
 
 
