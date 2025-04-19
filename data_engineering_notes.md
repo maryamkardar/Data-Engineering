@@ -596,15 +596,15 @@ while error > 1:
     print(error)
     error /= 4 # error = error / 4
 
-print(error)
-names = ['Ali', 'Babak', 'Fatemeh', 'Mosa', 'Maryam', 'Taha', 'Tahere']
-names = ['Ali', 'Babak', 'Fatemeh', 'Mosa', 'Maryam', 'Taha', 'Tahere']
-for valu in names:
-    print(name)
-names = ['Ali', 'Babak', 'Fatemeh', 'Mosa', 'Maryam', 'Taha', 'Tahere']
-for value in names:
-    print(value)
-for x in names:
+print(error)<br>
+names = ['Ali', 'Babak', 'Fatemeh', 'Mosa', 'Maryam', 'Taha', 'Tahere']<br>
+names = ['Ali', 'Babak', 'Fatemeh', 'Mosa', 'Maryam', 'Taha', 'Tahere']<br>
+for valu in names:<br>
+    print(name)<br>
+names = ['Ali', 'Babak', 'Fatemeh', 'Mosa', 'Maryam', 'Taha', 'Tahere']<br>
+for value in names:<br>
+    print(value)<br>
+for x in names:<br>
     print(x)
 for alaki in names:
     print(alaki)
