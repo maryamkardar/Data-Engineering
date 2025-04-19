@@ -636,28 +636,28 @@ for num in range(len(names)):
     print(num)
 for ind in range(len(names)):
     print(ind, names[ind], sep = ": ")
-for value in enumerate(names):
-    print(value)
-nums = [1, 2]
-nums
-num1, num2 = nums
-num1
-num2
-for index, name in enumerate(names):
-    print(index, name, sep = ": ")
-nums = [1, 2, 3, 4]
-a, b, c,  d = nums
-a
-b
-c
-d
-enumerate(names)
-type(enumerate(names))
-range(10)
-list(range(10))
-list(enumerate(names))
-len(list(enumerate(names)))
-house = [["hallway", 11.25], 
+for value in enumerate(names):<br>
+    print(value)<br>
+nums = [1, 2]<br>
+nums<br>
+num1, num2 = nums<br>
+num1<br>
+num2<br>
+for index, name in enumerate(names):<br>
+    print(index, name, sep = ": ")<br>
+nums = [1, 2, 3, 4]<br>
+a, b, c,  d = nums<br>
+a<br>
+b<br>
+c<br>
+d<br>
+enumerate(names)<br>
+type(enumerate(names))<br>
+range(10)<br>
+list(range(10))<br>
+list(enumerate(names))<br>
+len(list(enumerate(names)))<br>
+house = [["hallway", 11.25], <br>
          ["kitchen", 18.0], 
          ["living room", 20.0], 
          ["bedroom", 10.75], 
