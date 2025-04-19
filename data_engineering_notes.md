@@ -615,21 +615,21 @@ for name in names:
     if name == "taha":
         print("found!")
         break
-for name in names:
-    print(name)
-    if name == "Taha":
-        print("found!")
-        break
-for name in names:
-    if name == "Taha":
-        continue
-    print(name)
-ind = 0
-for name in names:
-    print(ind, name, sep = ": ")
-    ind += 1
-len(names)
-for num in len(names):
+for name in names:<br>
+    print(name)<br>
+    if name == "Taha":<br>
+        print("found!")<br>
+        break<br>
+for name in names:<br>
+    if name == "Taha":<br>
+        continue<br>
+    print(name)<br>
+ind = 0<br>
+for name in names:<br>
+    print(ind, name, sep = ": ")<br>
+    ind += 1<br>
+len(names)<br>
+for num in len(names):<br>
     print(num)
 range(len(names))
 for num in range(len(names)):
