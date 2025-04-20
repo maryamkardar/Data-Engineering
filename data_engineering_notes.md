@@ -45,14 +45,14 @@ Funtions:(indentation is very important)
 def FuncName(arg):
     return(expr)
 
-Sometimes arg is not needed, 
-e.g: # Current date and time
-now = datetime.now()
+Sometimes arg is not needed, <br>
+e.g: # Current date and time<br>
+now = datetime.now()<br>
 
-explanation about Functions:
-help(sum)
-?sum
-SPYDER---> tools-->preferences--->Help--> active all sections
+explanation about Functions:<br>
+help(sum)<br>
+?sum<br>
+SPYDER---> tools-->preferences--->Help--> active all sections<br>
 
 a---> z : z has bigger Ascii code for sorting (Ascci code of Capital letter is bigger than small letter A > a)
 len(lst) number of elements in mentioned list 
