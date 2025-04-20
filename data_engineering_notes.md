@@ -658,29 +658,29 @@ list(range(10))<br>
 list(enumerate(names))<br>
 len(list(enumerate(names)))<br>
 house = [["hallway", 11.25], <br>
-         ["kitchen", 18.0], 
-         ["living room", 20.0], 
-         ["bedroom", 10.75], 
-         ["bathroom", 9.50]]
-for value in house:
-    print(value)
-for room, size in house:
-    print(room, size, sep = ": ")
-%clear
-matrix = np.arange(9).reshape(3, 3)
-matrix
-for value in enumerate(matrix):
-    print(value)
-for rowIndex, row in enumerate(matrix):
-    for value in enumerate(row):
-        print(value)
-matrix
-for rowIndex, row in enumerate(matrix):
-    for colIndex, value in enumerate(row):
-        print("(", str(rowIndex), ', ', str(colIndex), '): ', str(value))
-for rowIndex, row in enumerate(matrix):
-    for colIndex, value in enumerate(row):
-        print("(", str(rowIndex), ', ', str(colIndex), '): ', str(value), sep = "")
+         ["kitchen", 18.0], <br>
+         ["living room", 20.0], <br>
+         ["bedroom", 10.75], <br>
+         ["bathroom", 9.50]]<br>
+for value in house:<br>
+    print(value)<br>
+for room, size in house:<br>
+    print(room, size, sep = ": ")<br>
+%clear<br>
+matrix = np.arange(9).reshape(3, 3)<br>
+matrix<br>
+for value in enumerate(matrix):<br>
+    print(value)<br>
+for rowIndex, row in enumerate(matrix):<br>
+    for value in enumerate(row):<br>
+        print(value)<br>
+matrix<br>
+for rowIndex, row in enumerate(matrix):<br>
+    for colIndex, value in enumerate(row):<br>
+        print("(", str(rowIndex), ', ', str(colIndex), '): ', str(value))<br>
+for rowIndex, row in enumerate(matrix):<br>
+    for colIndex, value in enumerate(row):<br>
+        print("(", str(rowIndex), ', ', str(colIndex), '): ', str(value), sep = "")<br>
 for char in "Seyyedeh Maryam Hosseini":
     print(char)
 house
