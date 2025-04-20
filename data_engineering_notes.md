@@ -41,9 +41,9 @@ Piping: Cat file.txt | grep "Keyword" | Sort<br>
 Chaining: # Chaining inbuilt functions<br>
 result = text.strip().upper().replace("WORLD", "FRIEND")<br>
 
-Funtions:(indentation is very important)
-def FuncName(arg):
-    return(expr)
+Funtions:(indentation is very important)<br>
+def FuncName(arg):<br>
+    return(expr)<br>
 
 Sometimes arg is not needed, <br>
 e.g: # Current date and time<br>
@@ -54,26 +54,26 @@ help(sum)<br>
 ?sum<br>
 SPYDER---> tools-->preferences--->Help--> active all sections<br>
 
-a---> z : z has bigger Ascii code for sorting (Ascci code of Capital letter is bigger than small letter A > a)
-len(lst) number of elements in mentioned list 
-sorted(lst, reverse=True)
+a---> z : z has bigger Ascii code for sorting (Ascci code of Capital letter is bigger than small letter A > a)<br>
+len(lst) number of elements in mentioned list <br>
+sorted(lst, reverse=True)<br>
+<br>
+using cheat sheet is very important<br>
+<br>
+String Methods:<br>
+'ali'.capitilize<br>
+'ali'.upper()<br>
+'Ali'.lower()<br>
+'maryam hosseini'.count('a')<br>
+'maryam hosseini'.count('gh')<br>
+'maryam hosseini'.index('i')<br>
+'maryam hosseini'.index('i',3) ---> from third element afterward<br>
+'maryam hosseini'.split() ---> split by distance<br>
+'maryam hosseini'.split('i') ---> split by i<br>
+list('maryam hosseini') break down into each letter<br>
 
-using cheat sheet is very important
-
-String Methods:
-'ali'.capitilize
-'ali'.upper()
-'Ali'.lower()
-'maryam hosseini'.count('a')
-'maryam hosseini'.count('gh')
-'maryam hosseini'.index('i')
-'maryam hosseini'.index('i',3) ---> from third element afterward
-'maryam hosseini'.split() ---> split by distance
-'maryam hosseini'.split('i') ---> split by i
-list('maryam hosseini') break down into each letter
-
-Iterable / Iterator
-# gready methods
+Iterable / Iterator<br>
+# gready methods<br>
 lst = [1,2,1,3,1,4]
 lst.index
 lst.count(1)
