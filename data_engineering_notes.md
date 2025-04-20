@@ -74,36 +74,36 @@ list('maryam hosseini') break down into each letter<br>
 
 Iterable / Iterator<br>
 # gready methods<br>
-lst = [1,2,1,3,1,4]
-lst.index
-lst.count(1)
-lst.append(1)
-lst.remove(1)
-lst.reverse()
+lst = [1,2,1,3,1,4]<br>
+lst.index<br>
+lst.count(1)<br>
+lst.append(1)<br>
+lst.remove(1)<br>
+lst.reverse()<br>
 
 
-lst.pop()
-lst.pop(index)
+lst.pop()<br>
+lst.pop(index)<br>
 
-# Dictionary : pair of key, value (key,value)
-DictName.keys()---> key
-DictName.values()---> value
-DictName.items() ---> (key,value)
+# Dictionary : pair of key, value (key,value)<br>
+DictName.keys()---> key<br>
+DictName.values()---> value<br>
+DictName.items() ---> (key,value)<br>
 
-DictName[key] ---> value
-for slicing a dictionary by Index, it should be converted to a list
-a dictinary works by keys and a list works by indexes
+DictName[key] ---> value<br>
+for slicing a dictionary by Index, it should be converted to a list<br>
+a dictinary works by keys and a list works by indexes<br>
 
-list(DictName.keys())[0]
-list(DictName.items())[0][0]
+list(DictName.keys())[0]<br>
+list(DictName.items())[0][0]<br>
 
-# adding new item to a dict
-DictName[key]=value 
-# deleting an item from a dict
-del DictName[key]
-DictName[key].pop(key)
-# changing an item in a dict
-DictName[key]= new value 
+# adding new item to a dict<br>
+DictName[key]=value <br>
+# deleting an item from a dict<br>
+del DictName[key]<br>
+DictName[key].pop(key)<br>
+# changing an item in a dict<br>
+DictName[key]= new value <br>
 
 *When order is important ,we use **lists** and when finding values based on keys is important, **Dictionaries** should be considered.*
 *NOSQL logic is using several nested Dictionaries*
