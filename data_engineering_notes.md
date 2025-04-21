@@ -841,7 +841,328 @@ for rowIndex, row in cars.iterrows():<br>
     cars.loc[rowIndex,'capital'] = row['country'].upper()<br>
 cars<br>
 
+## ---(Fri Nov  1 13:57:51 2024)---
+%clear
+1, 2, 3
+type((1, 2, 3))
+(1, 'ali', 3.14, True)
+a, b, c = (1, 2, 3)
+a
+b
+c
+def powerBoth(num1, num2):
+    tup = (num1 ** num2, num2 ** num1)
+    return tup
+powerBoth(2, 3)
+powerBoth(2, 3)[0]
+powerBoth(2, 3)[1]
+%clear
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv')
+import pandas as pd
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv')
+tweets
+tweets.lang
+langDict = {}
+for lang in tweets.lang:
+    print(lang)
+langDict = {}
+for lang in tweets.lang:
+    if lang not in langDict:
+        langDict[lang] = 1
+    else:
+        langDict[lang] += 1
+langDict
+%clear
+newValue = 10
 
+def square(val):
+    newValue = value ** 2
+    return newValue
+newValue
+square(3)
+def square(value):
+    newValue = value ** 2
+    return newValue
+square(3)
+def mod2(num1, num2, num3):
+    mod1 = num1 % 2
+    mod2 = num2 % 2
+    mod3 = num3 % 2
+    
+    return(mod1, mod2, mod3)
+mod(10, 11, 12)
+mod2(10, 11, 12)
+def mod(num):
+    return num % 2
+
+def mod2(num1, num2, num3):
+    return(mod(num1), mod(num2), mod(num3))
+mod2(10, 11, 12)
+def mod2(num1, num2, num3):
+    def inner(num):
+        return num % 2
+    
+    return(inner(num1), inner(num2), inner(num3))
+mod2(10, 11, 12)
+def xpowy(y):
+    def inner(x):
+        return x ** y
+    return inner
+xpowy(2)
+square = xpowy(2)
+square(12)
+square(5)
+square(6)
+cubic = xpowy(3)
+cubic(5)
+cubic(3)
+cubic(2)
+def factorial(num):
+    if num in [0, 1]:
+        return 1
+    else:
+        return num * factorial(num - 1)
+factorial(0)
+factorial(1)
+factorial(13)
+factorial(3)
+factorial(5)
+5 * 4 * 3 * 2
+sum([1, 2, 3, 4 , 5])
+def summation(num1, num2, num3):
+    total = 0
+    for num in [num1, num2, num3]:
+        total += num
+    return total
+summation(1, 2, 3)
+summation(1, 2, 3, 4)
+def summation(*nums):
+    print(nums)
+summation(10, 11, 12, 13, 14)
+def summation(*nums):
+    total = 0
+    for num in nums:
+        total += num
+    return total
+summation(1)
+summation(1, 2)
+summation(1, 2, 3)
+summation(1, 2, 3, 4)
+summation(1, 2, 3, 4, 5)
+summation(1, 2, 3, 4, 5, 6)
+def alaki(**entery):
+    return entery
+alaki(name = "ali", age = 36, family = "sadeghi")
+%clear
+def multiply(*nums):
+    if 0 in nums:
+        return 0
+    else:
+        total = 1
+        for num in nums:
+            total *= num
+    
+    return num
+echo('ali', 4)
+def echo (word, rep):
+    return word * rep
+echo('ali', 4)
+echo2 = lambda word, rep: word * rep
+echo2('ali', 4)
+nums = (1, 2, 3, 4)
+nums
+map(lambda num: num ** 2, nums)
+result = map(lambda num: num ** 2, nums)
+result
+type(result)
+list(result)
+def square(num):
+    return num ** 2
+list(map(square, nums))
+nums = range(-5, 5)
+filter(lambda num: num < 0, nums)
+result = filter(lambda num: num < 0, nums)
+type(result)
+list(result)
+result = filter(lambda num: num % 2 == 0, nums)
+list(result)
+%clear
+map(lambda num1, num2: num1 + num2, nums1, nums2)
+nums1 = [4, 5, 6]
+nums1 = [6, 5, 4]
+# result = [10, 10, 10]
+
+map(lambda num1, num2: num1 + num2, nums1, nums2)
+nums1 = [4, 5, 6]
+nums2 = [6, 5, 4]
+# result = [10, 10, 10]
+
+map(lambda num1, num2: num1 + num2, nums1, nums2)
+
+"""
+Created on Fri Nov  1 15:49:09 2024
+
+@author: ali sadeghi aghili
+"""
+nums1 = [4, 5, 6]
+nums2 = [6, 5, 4]
+# result = [10, 10, 10]
+
+list(map(lambda num1, num2: num1 + num2, nums1, nums2))
+teachers
+teacher
+pd.read_csv(r'H:\Work\Python\Examples\1-basics\teachers.csv').name
+names = pd.read_csv(r'H:\Work\Python\Examples\1-basics\teachers.csv').name
+list(map(lambda name: len(name) > 4, names))
+list(filter(lambda name: len(name) > 4, names))
+gap = pd.read_csv(r'H:\Work\Python\Examples\1-basics\gapminder.csv')
+gap
+gap.country.map(len)
+gap.country.apply(len)
+gap.columns
+gap.loc[:, ['life_exp', 'gdp_cap']].apply(lambda num: num + 10, axis = 0)
+gap.loc[:, ['life_exp', 'gdp_cap']]
+gap.applymap(lambda num: num + 10)
+gap.applymap(lambda num: str(num) + 10)
+gap.applymap(lambda num: str(num) + '10')
+nums = [43, 11, 49, 13]
+reduce(lambda num1, num2: num1 if num1 > num2 else num2, nums)
+from functools import reduce
+nums = [43, 11, 49, 13]
+reduce(lambda num1, num2: num1 if num1 > num2 else num2, nums)
+reduce(lambda num1, num2: num1 * num2, nums)
+names = ['Ali', 'Babak', 'Fatehemh', 'Mosa', 'Maryam', 'Taha', 'Tahere']
+for name in names:
+    print(name)
+namesIter = iter(names)
+namesIter
+next(namesIter)
+namesIter = iter(names)
+next(namesIter)
+print(* namesIter)
+nums1 = [4, 5, 6]
+nums2 = [6, 5, 4]
+result = map(lambda num1, num2: num1 + num2, nums1, nums2)
+next(result)
+%clear
+names = ['Ali', 'Babak', 'Fatehemh', 'Mosa', 'Maryam', 'Taha', 'Tahere']
+family = ['Ghasemi', 'Javanmard', 'Khani', 'Naseri']
+age = [40, 34]
+zip(names, family, age)
+list(zip(names, family, age))
+names = ['Ali', 'Babak', 'Fatehemh', 'Mosa', 'Maryam', 'Taha', 'Tahere']
+family = ['Ghasemi', 'Javanmard', 'Khani', 'Naseri']
+age = [40, 34, 0, 0, 0]
+list(zip(names, family, age))
+for info in zip(names, family, age):
+    print(info)
+for name, family, age in zip(names, family, age):
+    print(name + ' ' + family + ': ' + str(age))
+provinces
+provinces = ['Eastern Azarbaijan', 'Western Azarbaijan', 'Ardabil', 'Isfahan',
+             'Alborz', 'Ilam', 'Bushehr', 'Tehran', 'Charmahal & Bakhtiari',
+             'Southern Khorasan', 'Razavian Khorasan', 'Northern Khorasan',
+             'Khuzestan', 'Zanjan', 'Semnan', 'Sistan & Balouchestan', 'Fars',
+             'Qazvin', 'Qom', 'Kurdistan', 'Kerman', 'Kermanshah',
+             'Kohgiluye & Boyer Ahmad', 'Golestan', 'Gilan', 'Lorestan',
+             'Mazandaran', 'Markazi', 'Hormozgan', 'Hamedan', 'Yazd']
+
+cities = ['Tabriz', 'Oroumieh', 'Ardabil', 'Isfahan', 'Karaj', 'Ilam', 'Bushehr',
+          'Tehran', 'Shahre Kord', 'Birjand', 'Mashad', 'Bojnourd', 'Ahwaz',
+          'Zanjan', 'Semnan', 'Zahedan', 'Shiraz', 'Qazvin', 'Qom', 'Sanandaj',
+          'Kerman', 'Kermanshah', 'Yasouj', 'Gorgan', 'Rasht', 'Khorram Abad',
+          'Saari', 'Arak', 'Bandar Abbas', 'Hamedan', 'Yazd']
+dict(zip(provinces, cities))
+info = zip(provinces, cities)
+next(info)
+province , city = next(info)
+province
+city
+province , city = next(info)
+province
+city
+pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.alaki')
+pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets')
+for chunk in pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', chunksize=10):
+    print(chunk)
+    print('=====================================')
+for chunk in pd.read_csv(r'H:\Work\Python\Examples\1-basics\data.csv', chunksize=500):
+    print(chunk.iloc[:, 0])
+    print('=====================================')
+total = 0
+for chunk in pd.read_csv(r'H:\Work\Python\Examples\1-basics\data.csv', chunksize=500):
+    total += sum(chunk.iloc[:, 0])
+    print(total)
+    print('=====================================')
+result = []
+for value in [1, 2, 3, 4]:
+    result.append(value * 10)
+result
+[]
+type([])
+[value * 10 for value in [1, 2, 3, 4]]
+result = [value * 10 for value in [1, 2, 3, 4]]
+result
+pairs = []
+for num1 in range(0, 2):
+    for num2 in range(6, 8):
+        pairs.append(num1, num2)
+pairs = []
+for num1 in range(0, 2):
+    for num2 in range(6, 8):
+        pairs.append((num1, num2))
+pairs
+[(num1, num2) for num1 in range(0, 2) for num2 in range(6, 8)]
+[num ** 2 for num in range(5)]
+[num ** 2 for num in range(10)]
+len([num ** 2 for num in range(10)])
+[num ** 2 for num in range(10)]
+[num ** 2 for num in range(10) if num % 2 == 0]
+len([num ** 2 for num in range(10) if num % 2 == 0])
+[num ** 2 if num % 2 == 0 else num for num in range(10)]
+[[[num],[num],[num],[num]] for num in range(4)]
+[[num],[num],[num],[num] for num in range(4)]
+[[num,num,num,num] for num in range(4)]
+[num for num in range(4)]
+[[] for num in range(4)]
+[[num2 for num2 in range(4)] for num1 in range(4)]
+[[row + col for col in range(4)] for row in range(4)]
+[[row * 4 + col for col in range(4)] for row in range(4)]
+teachers
+pd.read_csv(r'H:\Work\Python\Examples\1-basics\teachers.csv')
+teachers = pd.read_csv(r'H:\Work\Python\Examples\1-basics\teachers.csv', index_col = 0)
+teachers
+[name for name in teachers.name]
+[name for name in teachers.name if len(name) > 4]
+{num:-num for num in range(4)}
+{num:[] for num in range(4)}
+teachers
+{name + ' ' + family: major for name, family, major in zip(teachers.name, teachers.family, teachers.major)}
+[(name, family, major) for name, family, major in teachers]
+teachers
+numGen = (num for num in range(6))
+next(numGen)
+[num for num in range(10 ** 100)]
+[num for num in range(10 ** 10)]
+numGen = (num for num in range(10 ** 100000))
+next(numGen)
+def numSeq(num):
+    ind = 0
+    while ind < num:
+        yield ind
+        ind += 1
+numSeq(5)
+result = numSeq(5)
+next(result)
+teachers
+def nameCount (names):    
+    for name in names:
+        yield len(name)
+result = nameCound(teachers.name)
+result = nameCount(teachers.name)
+next(result)
+nameLenGen =(len(name) for name in teachers.name)
+next(nameLenGen)
 
 
 
