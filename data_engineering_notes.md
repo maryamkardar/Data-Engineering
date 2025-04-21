@@ -1142,27 +1142,27 @@ teachers
 teachers
 numGen = (num for num in range(6))
 next(numGen)
-[num for num in range(10 ** 100)]
-[num for num in range(10 ** 10)]
-numGen = (num for num in range(10 ** 100000))
-next(numGen)
-def numSeq(num):
-    ind = 0
-    while ind < num:
-        yield ind
-        ind += 1
-numSeq(5)
-result = numSeq(5)
-next(result)
-teachers
-def nameCount (names):    
-    for name in names:
-        yield len(name)
-result = nameCound(teachers.name)
-result = nameCount(teachers.name)
-next(result)
-nameLenGen =(len(name) for name in teachers.name)
-next(nameLenGen)
+[num for num in range(10 ** 100)]<br>
+[num for num in range(10 ** 10)]<br>
+numGen = (num for num in range(10 ** 100000))<br>
+next(numGen)<br>
+def numSeq(num):<br>
+    ind = 0<br>
+    while ind < num:<br>
+        yield ind<br>
+        ind += 1<br>
+numSeq(5)<br>
+result = numSeq(5)<br>
+next(result)<br>
+teachers<br>
+def nameCount (names):  <br>  
+    for name in names:<br>
+        yield len(name)<br>
+result = nameCound(teachers.name)<br>
+result = nameCount(teachers.name)<br>
+next(result)<br>
+nameLenGen =(len(name) for name in teachers.name)<br>
+next(nameLenGen)<br>
 
 
 
