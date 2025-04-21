@@ -108,20 +108,20 @@ DictName[key]= new value <br>
 *When order is important ,we use **lists** and when finding values based on keys is important, **Dictionaries** should be considered.*
 *NOSQL logic is using several nested Dictionaries*
 
-Example of a nested dictionary:
-italy = {'capital': 'rome', 'population': 59.83 }
-spain = {'capital': 'madrid', 'population': 46.77 }
-france = {'capital': 'paris', 'population': 66.03 }
-germany= {'capital': 'berlin', 'population': 80.62 }
-norway= {'capital': 'oslo', 'population': 5.084 }
-europe = {'italy': italy, 'spain': spain, 'france': france, 'germany': germany, 'norway': norway}
-europe
-europe['france']
-result = europe['france']
-result
-result['capital']
-europe['france']
-europe['france']['capital']
+Example of a nested dictionary:<br>
+italy = {'capital': 'rome', 'population': 59.83 }<br>
+spain = {'capital': 'madrid', 'population': 46.77 }<br>
+france = {'capital': 'paris', 'population': 66.03 }<br>
+germany= {'capital': 'berlin', 'population': 80.62 }<br>
+norway= {'capital': 'oslo', 'population': 5.084 }<br>
+europe = {'italy': italy, 'spain': spain, 'france': france, 'germany': germany, 'norway': norway}<br>
+europe<br>
+europe['france']<br>
+result = europe['france']<br>
+result<br>
+result['capital']<br>
+europe['france']<br>
+europe['france']['capital']<br>
 
 # in applications
 'Ali' in 'alireza'   ---> False
