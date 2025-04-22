@@ -142,53 +142,53 @@ familyDict
 familyDict.values()  
 170 in familyDict.values()  ---> True
 
-import numpy
-heights = [184, 175]
-weights = [76, 66]
-BMI = weight/height ** 2
-BMI = weights/heights ** 2
-weights[0]/heights[0] ** 2
-weights[1]/heights[1] ** 2
-weights[0]/(heights[0]/100) ** 2
-weights[1]/(heights[1]/100) ** 2
-BMI = [bmi1, bmi2]
-bmi1 = weights[0]/(heights[0]/100) ** 2
-bmi2 = weights[1]/(heights[1]/100) ** 2
-BMI = [bmi1, bmi2]
-BMI
-def multiply(lst1, lst2):
-    y = 0
-    lst = []
-        for element1 in lst1:
-            for element2 in lst2:
-                multiply = element1 * element2
-                lst.append(multiply)
-                y += 1
-                break
-    return lst
-def multiply(lst1, lst2):
-    y = 0
-    lst = []
-    for element1 in lst1:
-        for element2 in lst2:
-            multiply = element1 * element2
-            lst.append(multiply)
-            y += 1
-            break
-    return lst
-multiply(num1, num2)
-num1 = [1, 2, 3]
-num2 = [1, 2, 3]
-multiply(num1, num2)
-def multiply(lst1, lst2):
-    y = 0
-    lst = []
-    for element1 in lst1:
-        for element2 in lst2[y:]:
-            multiply = element1 * element2
-            lst.append(multiply)
-            y += 1
-            break
+import numpy<br>
+heights = [184, 175]<br>
+weights = [76, 66]<br>
+BMI = weight/height ** 2<br>
+BMI = weights/heights ** 2<br>
+weights[0]/heights[0] ** <br>
+weights[1]/heights[1] ** 2<br>
+weights[0]/(heights[0]/100) ** 2<br>
+weights[1]/(heights[1]/100) ** 2<br>
+BMI = [bmi1, bmi2]<br>
+bmi1 = weights[0]/(heights[0]/100) ** 2<br>
+bmi2 = weights[1]/(heights[1]/100) ** 2<br>
+BMI = [bmi1, bmi2]<br>
+BMI<br>
+def multiply(lst1, lst2):<br>
+    y = <br>
+    lst = <br>
+        for element1 in lst1:<br>
+            for element2 in lst2:<br>
+                multiply = element1 * element2<br>
+                lst.append(multiply)<br>
+                y += 1<br>
+                break<br>
+    return lst<br>
+def multiply(lst1, lst2):<br>
+    y = 0<br>
+    lst = []<br>
+    for element1 in lst1:<br>
+        for element2 in lst2:<br>
+            multiply = element1 * element2<br>
+            lst.append(multiply)<br>
+            y += 1<br>
+            break<br>
+    return lst<br>
+multiply(num1, num2)<br>
+num1 = [1, 2, 3]<br>
+num2 = [1, 2, 3]<br>
+multiply(num1, num2)<br>
+def multiply(lst1, lst2):<br>
+    y = 0<br>
+    lst = []<br>
+    for element1 in lst1:<br>
+        for element2 in lst2[y:]:<br>
+            multiply = element1 * element2<br>
+            lst.append(multiply)<br>
+            y += 1<br>
+            break<br>
     return lst
 multiply(num1, num2)
 npNum1 = np.array(num1)
