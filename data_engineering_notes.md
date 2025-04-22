@@ -123,7 +123,7 @@ result['capital']<br>
 europe['france']<br>
 europe['france']['capital']<br>
 
-# in applications
+# "in" applications
 'Ali' in 'alireza'   ---> False
 'Ali'.lower() in 'alireza' ---> True
 lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
