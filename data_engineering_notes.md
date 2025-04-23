@@ -125,11 +125,11 @@ europe['france']['capital']<br>
 
 # "in" applications<br>
 'Ali' in 'alireza'   ---> False<br>
-'Ali'.lower() in 'alireza' ---> True
-lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-5 in lst   ---> True
-11 in lst  ---> False
-lst2 = ['ali', 'sadeghi']
+'Ali'.lower() in 'alireza' ---> True<br>
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10<br>
+5 in lst   ---> True<br>
+11 in lst  ---> False<br>
+lst2 = ['ali', 'sadeghi']<br>
 'ali' in lst2  ---> True
 'akbar' in lst2  ---> False
 familyDict
