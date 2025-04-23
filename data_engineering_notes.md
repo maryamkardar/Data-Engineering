@@ -130,17 +130,17 @@ lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10<br>
 5 in lst   ---> True<br>
 11 in lst  ---> False<br>
 lst2 = ['ali', 'sadeghi']<br>
-'ali' in lst2  ---> True
-'akbar' in lst2  ---> False
-familyDict
-familyDict['father'] = 175
-familyDict
-175 in familyDict  ---> True
-'father' in familyDict  ---> False
-'son2' in familyDict  ---> True
-'180' in familyDict  ---> False
-familyDict.values()  
-170 in familyDict.values()  ---> True
+'ali' in lst2  ---> True<br>
+'akbar' in lst2  ---> False<br>
+familyDict<br>
+familyDict['father'] = 175<br>
+familyDict<br>
+175 in familyDict  ---> True<br>
+'father' in familyDict  ---> False<br>
+'son2' in familyDict  ---> True<br>
+'180' in familyDict  ---> False<br>
+familyDict.values()  <br>
+170 in familyDict.values()  ---> True<br>
 
 import numpy<br>
 heights = [184, 175]<br>
