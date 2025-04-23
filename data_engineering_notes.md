@@ -189,13 +189,13 @@ def multiply(lst1, lst2):<br>
             lst.append(multiply)<br>
             y += 1<br>
             break<br>
-    return lst
-multiply(num1, num2)
-npNum1 = np.array(num1)
-import numpy as np
-npNum1 = np.array(
-npNum1 = np.array(num1)
-npNum2 = np.array(num2)
+    return lst<br>
+multiply(num1, num2)<br>
+npNum1 = np.array(num1)<br>
+import numpy as np<br>
+npNum1 = np.array(<br>
+npNum1 = np.array(num1)<br>
+npNum2 = np.array(num2)<br>
 npNum1 * npNum2
 np.random.rand(10)
 v1 = np.random.rand(1000000)
