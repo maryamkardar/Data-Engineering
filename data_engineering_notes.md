@@ -105,8 +105,8 @@ DictName[key].pop(key)<br>
 # changing an item in a dict<br>
 DictName[key]= new value <br>
 
-*When order is important ,we use **lists** and when finding values based on keys is important, **Dictionaries** should be considered.*
-*NOSQL logic is using several nested Dictionaries*
+*When order is important ,we use **lists** and when finding values based on keys is important, **Dictionaries** should be considered.*<br>
+*NOSQL logic is using several nested Dictionaries*<br>
 
 Example of a nested dictionary:<br>
 italy = {'capital': 'rome', 'population': 59.83 }<br>
