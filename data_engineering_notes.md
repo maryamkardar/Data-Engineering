@@ -224,21 +224,21 @@ BMI[0]
 BMI[1]
 npHeights[0]
 type(npHeights)
-range(10)
-type(range(10))
-list(range(10))
-list(range(10, 20))
-list(range(10, 20, 2))
-np.arange(10)
-np.arange(10, 20)
-np.arange(10, 20, 2)
-np.arange(12)
-lst = [[0, 1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11]]
-np.array(lst)
-np.arange(12)
-np.arange(12).reshape(2, 6)
-np2d = np.arange(12).reshape(2, 6)
-np2d
+range(10)<br>
+type(range(10))<br>
+list(range(10))<br>
+list(range(10, 20))<br>
+list(range(10, 20, 2))<br>
+np.arange(10)<br>
+np.arange(10, 20)<br>
+np.arange(10, 20, 2)<br>
+np.arange(12)<br>
+lst = [[0, 1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11]]<br>
+np.array(lst)<br>
+np.arange(12)<br>
+np.arange(12).reshape(2, 6)<br>
+np2d = np.arange(12).reshape(2, 6)<br>
+np2d<br>
 np2d.reshape(-1,)  *reshape 2 dimension into one dimension*
 np2d.reshape(3, 4)
 np2d = np2d.reshape(3, 4)
