@@ -207,12 +207,12 @@ v2 = np.random.rand(100000)
 v1 = np.random.rand(1000000)
 v2 = np.random.rand(1000000)
 %time v1 * v2
-v1 = np.random.rand(100000)
-v2 = np.random.rand(100000)
-%time multiply(v1,v2)
-%time a = multiply(v1,v2)
-v1 = np.random.rand(1000000)
-v2 = np.random.rand(1000000)
+v1 = np.random.rand(100000)<br>
+v2 = np.random.rand(100000)<br>
+%time multiply(v1,v2)<br>
+%time a = multiply(v1,v2)<br>
+v1 = np.random.rand(1000000)<br>
+v2 = np.random.rand(1000000)<br>
 %time v1 * v2
 npHeights = np.array(heights)
 npWeights = np.array(weights)
