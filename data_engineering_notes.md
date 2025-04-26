@@ -1166,6 +1166,369 @@ next(nameLenGen)<br>
 
 
 
+## ---(Thu Nov  7 14:01:41 2024)---<br>
+fileHandler = open(r'H:\Work\Python\Examples\2-Importing\Story.txt', 'rt')<br>
+fileHandler<br>
+fileHandler.read()<br>
+fileHandler = open(r'H:\Work\Python\Examples\2-Importing\Story.txt', 'rt')<br>
+fileHandler.read()<br>
+fileHandler.seek(0)<br>
+fileHandler.read()<br>
+fileHandler.seek(0)<br>
+fileHandler.read()<br>
+fileHandler.seek(10)<br>
+fileHandler.read()<br>
+fileHandler.seek(0)<br>
+fileHandler.read(10)<br>
+fileHandler.seek(0)<br>
+fileHandler.readlines()<br>
+fileHandler.seek(0)<br>
+lines = fileHandler.readlines()<br>
+type(lines)<br>
+lines<br>
+lines[0]<br>
+lines[1]<br>
+fileHandler.seek(0)<br>
+fileHandler.readline()
+fileHandler.read()
+fileHandler.seek(0)
+fileHandler.readlines()
+fileHandler.seek(0)
+fileHandler.readline()
+# lock
+fileHandler.close()
+fileHandler = open(r'H:\Work\Python\Examples\2-Importing\Story.txt', 'rt')
+fileHandler.readlines(100)
+fileHandler.readline()
+fileHandler.close()
+fileHandler = open(r'H:\Work\Python\Examples\2-Importing\Story.txt', 'rt')
+lines = fileHandler.readlines()
+lines
+line[0]
+lines[0]
+lines[0:5]
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.write('hi.')
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.write('Hello to you!')
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.write('Hello to you!')
+fileWriter.write('\n')
+fileWriter.write('How is everything?\n')
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.write('Hello to you!')
+fileWriter.write('\n')
+fileWriter.write('How is everything?\n')
+fileWriter.seek(15)
+fileWriter.write('This is Ali.\n')
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.write('Hello to you!')
+fileWriter.write('\n')
+fileWriter.write('How is everything?\n')
+fileWriter.seek(15)
+fileWriter.write('This is Ali.\n')
+fileWriter.write('We are testing some new things.\n')
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.writelines(['Hello to you!', 'How is everything?', 'This is Ali.', 
+                       'We are testing some new things.'])
+fileWriter.close()
+?open.writelines
+?fileWriter.writelines
+help(fileWriter.writelines)
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.writelines(['Hello to you!', 'How is everything?', 'This is Ali.', 
+                       'We are testing some new things.'], '\n')
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.writelines(['Hello to you!\n', 
+                       'How is everything?\n', 
+                       'This is Ali.\n', 
+                       'We are testing some new things.\n'])
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'at')
+file.write('We are using append method right now.')
+fileWriter.write('We are using append method right now.')
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.write('We are using append method right now.')
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.seek(30)
+fileWriter.write('We are using append method right now.')
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.write('We are using append method right now.')
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'at')
+fileWriter.seek(15)
+fileWriter.write('||We are using append method right now.')
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'rt+')
+fileReader = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'rt+')
+fileReader.read()
+fileWriter.write('||We are using append method right now.')
+fileReader.close()
+fileReader = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'rt+')
+fileReader.read()
+fileReader.write('**akjhdkjhasdkjh**')
+fileReader.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+file.read()
+fileWriter.read()
+fileWriter.write('ali sadeghi')
+fileWriter.read()
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt+')
+fileWriter.write('ali sadeghi')
+fileWriter.read()
+fileWriter.seek(0)
+fileWriter.read()
+fileWriter.close()
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt+')
+fileWriter.write('ali sadeghi')
+fileWriter.seek(0)
+fileWriter.read()
+fileWriter.write('. this is me.')
+fileWriter.close()
+with open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt+') as fileHandler:
+    fileHandler.write('ali sadeghi')
+    fileHandler.seek(0)
+    fileHandler.read()
+    fileHandler.write('. this is me.')
+    fileHandler.write('. we are testing again.')
+np.loadtxt(r'H:\Work\Python\Examples\2-Importing\npTestWithoutHeader.txt')
+import numpy as np
+np.loadtxt(r'H:\Work\Python\Examples\2-Importing\npTestWithoutHeader.txt')
+np.loadtxt(r'H:\Work\Python\Examples\2-Importing\npTestWithoutHeader.txt', delimiter= ',')
+np.loadtxt(r'H:\Work\Python\Examples\2-Importing\npTestWithoutHeader.txt', delimiter= ',', dtype = 'int')
+np.loadtxt(r'H:\Work\Python\Examples\2-Importing\npTestWithHeader.txt', delimiter= ',', dtype = 'int')
+np.loadtxt(r'H:\Work\Python\Examples\2-Importing\npTestWithHeader.txt', 
+           delimiter= ',', 
+           dtype = 'int',
+           skiprows=1)
+np.loadtxt(r'H:\Work\Python\Examples\2-Importing\Snapp.txt', 
+           delimiter= ',', 
+           dtype = 'int')
+np.loadtxt(r'H:\Work\Python\Examples\2-Importing\Snapp.txt', 
+           delimiter= ',', 
+           dtype = 'int',
+           skiprows=1)
+np.loadtxt(r'H:\Work\Python\Examples\2-Importing\Snapp.txt', 
+           delimiter= ',', 
+           dtype = 'str',
+           skiprows=1)
+np.loadtxt(r'H:\Work\Python\Examples\2-Importing\Snapp.txt', 
+           delimiter= ',', 
+           #dtype = 'str',
+           skiprows=1,
+           usecols=3)
+np.genfromtxt(r'H:\Work\Python\Examples\2-Importing\titanic_sub.csv')
+np.genfromtxt(r'H:\Work\Python\Examples\2-Importing\titanic_sub.csv', delimiter=',')
+np.genfromtxt(r'H:\Work\Python\Examples\2-Importing\titanic_sub.csv', delimiter=',', skip_header=1)
+np.genfromtxt(r'H:\Work\Python\Examples\2-Importing\titanic_sub.csv', delimiter=',', names=True)
+np.recfromcsv(r'H:\Work\Python\Examples\2-Importing\titanic_sub.csv')
+%clear
+np.genfromtxt(r'H:\Work\Python\Examples\2-Importing\titanic_sub.csv', delimiter=',', names=True)
+np.recfromcsv(r'H:\Work\Python\Examples\2-Importing\titanic_sub.csv')
+%clear
+# dumping
+infoDict = {'Name': 'Ali', 'Family': 'Sadeghi', 'Age': 36}
+infoDict
+import pickle
+pickleWriter = open(r'H:\Work\Python\Examples\2-Importing\alaki.alisadeghi', 'wb')
+pickle.dump(infoDict, pickleWriter)
+pickleWriter.close()
+del infoDict
+infoDict
+pickleReader = open(r'H:\Work\Python\Examples\2-Importing\alaki.alisadeghi', 'rb')
+pickle.load(pickleReader)
+infoDict = pickle.load(pickleReader)
+pickleReader = open(r'H:\Work\Python\Examples\2-Importing\alaki.alisadeghi', 'rb')
+infoDict = pickle.load(pickleReader)
+infoDict
+pickleReader.close()
+infoDict
+pd.read_csv(r'H:\Work\Python\Examples\2-Importing\titanic_sub.csv')
+import pandas as pd
+pd.read_csv(r'H:\Work\Python\Examples\2-Importing\titanic_sub.csv')
+pd.read_csv(r'H:\Work\Python\Examples\2-Importing\titanic_sub.csv', index_col=0)
+titanic = pd.read_csv(r'H:\Work\Python\Examples\2-Importing\titanic_sub.csv', index_col=0)
+titanic
+pd.to_pickle(titanic, pickleWriter)
+pickleWriter = open(r'H:\Work\Python\Examples\2-Importing\titanic.pkl', 'wb')
+pd.to_pickle(titanic, pickleWriter)
+pickleWriter.close()
+del titanic
+pickleReader = open(r'H:\Work\Python\Examples\2-Importing\titanic.pkl', 'rb')
+titanic = pickle.load(pickleReader)
+pickleReader.close()
+titanic
+path = r'H:\Work\Python\Examples\2-Importing\teachers.xlsx'
+import pandas as pd
+ExcelReader = pd.ExcelFile(path)
+ExcelReader.sheet_names
+sheets = ExcelReader.sheet_names
+excle.parse()
+ExcelReader.parse()
+ExcelReader.parse(sheet_name='Sheet1')
+ExcelReader.parse(sheet_name=['Sheet1'])
+ExcelReader.parse(sheet_name=['Sheet1'], index_col=0)
+ExcelReader.parse(sheet_name=['Sheet1'], index_col=0, usecols=1)
+ExcelReader.parse(sheet_name=['Sheet1'], index_col=0, usecols=[1])
+ExcelReader.parse(sheet_name='Sheet1', index_col=0, usecols=[1])
+ExcelReader.parse(sheet_name='Sheet1', index_col=0, usecols=[1, 2])
+ExcelReader.parse(sheet_name='Sheet1', index_col=0, usecols=[1, 2], skipfooter=1)
+ExcelReader.parse(sheet_name='Sheet1', index_col=0, usecols=[1, 2], skipfooter=1, skiprows=1)
+ExcelReader.parse(sheet_name='Sheet1', index_col=0, usecols=[1, 2], 
+                  skipfooter=1, skiprows=1, header=0)
+ExcelReader.parse(sheet_name='Sheet1', usecols=[1, 2], 
+                  skipfooter=1, skiprows=1, header=['Name', 'Family'])
+ExcelReader.parse(sheet_name='Sheet1', usecols=[1, 2], 
+                  skipfooter=1, skiprows=1, names = ['Name', 'Family'])
+path = r'H:\Work\Python\Examples\2-Importing\battledeath.xlsx'
+ExcelReader = pd.ExcelFile(path)
+sheets = ExcelReader.sheet_names
+sheets
+ExcelReader.parse(sheet_name=0)
+ExcelReader.parse(sheet_name=1)
+ExcelReader.parse(sheet_name=[0, 1])
+ExcelReader.parse(sheet_name=sheets)
+ExcelReader.parse(sheet_name=1)
+data = ExcelReader.parse(sheet_name=1)
+pd.to_csv(r'H:\Work\Python\Examples\2-Importing\battledeath_2024-11-07.csv')
+data.to_csv(r'H:\Work\Python\Examples\2-Importing\battledeath_2024-11-07.csv')
+path = r'H:\Work\Python\Examples\2-Importing\battledeath_2024-11-07.xlsx'
+ExcelWriter = pd.ExcelWriter(path)
+data.to_excel(ExcelWriter, sheet_name = 'new')
+ExcelWriter.save()
+%clear
+pd.read_sas(r'H:\Work\Python\Examples\2-Importing\airline.sas7bdat')
+pd.read_sas(r'H:\Work\Python\Examples\2-Importing\airline.sas7bdat', index_col = 0)
+pd.read_sas(r'H:\Work\Python\Examples\2-Importing\airline.sas7bdat')
+data = pd.read_sas(r'H:\Work\Python\Examples\2-Importing\airline.sas7bdat')
+data.index(data.Year)
+data.index = data.Year
+data.Year
+data = pd.read_sas(r'H:\Work\Python\Examples\2-Importing\airline.sas7bdat')
+data.Year
+data
+data.columns
+data.YEAR
+data.index = data.YEAR
+data
+del data.YEAR
+del data['YEAR']
+data
+pd.read_spss(path)
+path = r'H:\Work\Python\Examples\2-Importing\computer.dta'
+pd.read_spss(path)
+import pandas as pd
+path = r'H:\Work\Python\Examples\2-Importing\computer.dta'
+pd.read_spss(path)
+path = r'H:\Work\Python\Examples\2-Importing\computer.dta'
+pd.read_spss(path)
+path = r'H:\Work\Python\Examples\2-Importing\trade.dta'
+pd.read_spss(path)
+path = r'H:\Work\Python\Examples\2-Importing\disarea.dta'
+pd.read_spss(path)
+import pandas as pd
+path = r'H:\Work\Python\Examples\2-Importing\disarea.dta'
+pd.read_stata(path)
+path = r'H:\Work\R\Examples\2-Importing\6-StatisticalSoftwares\SPSS\international.sav'
+pd.read_spss(path)
+data.to_sas()
+from sas7bdat import SAS7BDAT
+from SAS7BDAT import SAS7BDAT
+from SAS7BDAT import sas7bdat
+import SAS7BDAT
+import scipy.io
+mat = r'H:\Work\Python\Examples\2-Importing\ja_data2.mat'
+path = r'H:\Work\Python\Examples\2-Importing\ja_data2.mat'
+mat = scipy.io.matlab.loadmat(path)
+mat
+mat['cfpCyt']
+type(mat['cfpCyt'])
+from requests import urlretrive
+from Request import urlretrive
+from urllib.request import urlretrive
+import urllib
+from urllib.request import urlretrieve
+urlretrieve('https://drive.google.com/uc?id=1zO8ekHWx9U7mrbx_0Hoxxu6od7uxJqWw&export=download')
+urlretrieve(url, filename=r'H:\Work\Python\Examples\downloaded.csv')
+url = 'https://drive.google.com/uc?id=1zO8ekHWx9U7mrbx_0Hoxxu6od7uxJqWw&export=download'
+urlretrieve(url, filename=r'H:\Work\Python\Examples\downloaded.csv')
+pd.read_csv(url)
+req = Request(url)
+from urllib.request import urlretrieve, urlopen, Request
+req = Request(url)
+req
+type(req)
+resp = urlopen(req)
+resp
+resp.read()
+import requests
+resp = requests.get(url)
+requests.get(url)
+resp.text
+import requests
+from bs4 import BeautifulSoup
+
+url = 'https://example.com/'
+resp = requests.get(url)
+resp.text
+html = resp.text
+soup = BeautifulSoup(html)
+soup
+resp.status_code
+soup.title
+soup.get_text('p')
+soup.find_all('a')
+
+url = 'https://www.wikipedia.org/'
+
+resp = requests.get(url)
+html = resp.text
+# resp.status_code
+soup = BeautifulSoup(html)
+soup.find_all('a')
+result = soup.find_all('a')
+type(result)
+result[0]
+result[1]
+result[3]
+%clear
+[link for link soup.find_all('a')]
+[link for link in soup.find_all('a')]
+[link.get('href') for link in soup.find_all('a')]
+import json
+jsonData = '{"name":"John", "age":30, "car":null}'
+json.loads(jsonData)
+result = json.loads(jsonData)
+result['name']
+path = r'H:\Work\Python\Examples\2-Importing\cakes.json'
+json.load(path)
+jsonReader = open(path, 'rt')
+json.load(jsonReader)
+pd.read_json(jsonReader)
+pd.read_json(path)
+%clear
+url = 'http://www.omdbapi.com/?i=tt3896198&apikey=4fd5103f'
+requests.get(utl + '&t=batman+the+dark+knight')
+requests.get(url + '&t=batman+the+dark+knight')
+resp = requests.get(url + '&t=batman+the+dark+knight')
+resp
+resp.text
+resp.json()
+result = resp.json()
+result['Year']
+
+
+
 
 
 
