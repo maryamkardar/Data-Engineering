@@ -196,32 +196,32 @@ import numpy as np<br>
 npNum1 = np.array(<br>
 npNum1 = np.array(num1)<br>
 npNum2 = np.array(num2)<br>
-npNum1 * npNum2
-np.random.rand(10)
-v1 = np.random.rand(1000000)
-v2 = np.random.rand(1000000)
-v1 = np.random.rand(100000)
-v2 = np.random.rand(100000)
-# Magic commands on IPYTHON
-%time v1 * v2
-v1 = np.random.rand(1000000)
-v2 = np.random.rand(1000000)
-%time v1 * v2
+npNum1 * npNum2<br>
+np.random.rand(10)<br>
+v1 = np.random.rand(1000000)<br>
+v2 = np.random.rand(1000000)<br>
+v1 = np.random.rand(100000)<br>
+v2 = np.random.rand(100000)<br>
+# Magic commands on IPYTHON<br>
+%time v1 * v2<br>
+v1 = np.random.rand(1000000)<br>
+v2 = np.random.rand(1000000)<br>
+%time v1 * v2<br>
 v1 = np.random.rand(100000)<br>
 v2 = np.random.rand(100000)<br>
 %time multiply(v1,v2)<br>
 %time a = multiply(v1,v2)<br>
 v1 = np.random.rand(1000000)<br>
 v2 = np.random.rand(1000000)<br>
-%time v1 * v2
-npHeights = np.array(heights)
-npWeights = np.array(weights)
-BMI = npWeights/npHeights ** 2
-BMI
-BMI = npWeights/(npHeights/100) ** 2
-BMI
-BMI[0]
-BMI[1]
+%time v1 * v2<br>
+npHeights = np.array(heights)<br>
+npWeights = np.array(weights)<br>
+BMI = npWeights/npHeights ** 2<br>
+BMI<br>
+BMI = npWeights/(npHeights/100) ** 2<br>
+BMI<br>
+BMI[0]<br>
+BMI[1]<br>
 npHeights[0]
 type(npHeights)
 range(10)<br>
