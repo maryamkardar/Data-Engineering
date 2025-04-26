@@ -1189,62 +1189,62 @@ lines<br>
 lines[0]<br>
 lines[1]<br>
 fileHandler.seek(0)<br>
-fileHandler.readline()
-fileHandler.read()
-fileHandler.seek(0)
-fileHandler.readlines()
-fileHandler.seek(0)
-fileHandler.readline()
-# lock
-fileHandler.close()
-fileHandler = open(r'H:\Work\Python\Examples\2-Importing\Story.txt', 'rt')
-fileHandler.readlines(100)
-fileHandler.readline()
-fileHandler.close()
-fileHandler = open(r'H:\Work\Python\Examples\2-Importing\Story.txt', 'rt')
-lines = fileHandler.readlines()
-lines
-line[0]
-lines[0]
-lines[0:5]
-fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
-fileWriter.write('hi.')
-fileWriter.close()
-fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
-fileWriter.write('Hello to you!')
-fileWriter.close()
-fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
-fileWriter.write('Hello to you!')
-fileWriter.write('\n')
-fileWriter.write('How is everything?\n')
-fileWriter.close()
-fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
-fileWriter.write('Hello to you!')
-fileWriter.write('\n')
-fileWriter.write('How is everything?\n')
-fileWriter.seek(15)
-fileWriter.write('This is Ali.\n')
-fileWriter.close()
-fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
-fileWriter.write('Hello to you!')
-fileWriter.write('\n')
-fileWriter.write('How is everything?\n')
-fileWriter.seek(15)
-fileWriter.write('This is Ali.\n')
-fileWriter.write('We are testing some new things.\n')
-fileWriter.close()
-fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileHandler.readline()<br>
+fileHandler.read()<br>
+fileHandler.seek(0)<br>
+fileHandler.readlines()<br>
+fileHandler.seek(0)<br>
+fileHandler.readline()<br>
+# lock<br>
+fileHandler.close()<br>
+fileHandler = open(r'H:\Work\Python\Examples\2-Importing\Story.txt', 'rt')<br>
+fileHandler.readlines(100)<br>
+fileHandler.readline()<br>
+fileHandler.close()<br><br>
+fileHandler = open(r'H:\Work\Python\Examples\2-Importing\Story.txt', 'rt')<br>
+lines = fileHandler.readlines()<br>
+lines<br>
+line[0]<br>
+lines[0]<br>
+lines[0:5]<br>
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')<br>
+fileWriter.write('hi.')<br>
+fileWriter.close()<br>
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')<br>
+fileWriter.write('Hello to you!')<br>
+fileWriter.close()<br>
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')<br>
+fileWriter.write('Hello to you!')<br>
+fileWriter.write('\n')<br>
+fileWriter.write('How is everything?\n')<br>
+fileWriter.close()<br>
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')<br>
+fileWriter.write('Hello to you!')<br>
+fileWriter.write('\n')<br>
+fileWriter.write('How is everything?\n')<br>
+fileWriter.seek(15)<br>
+fileWriter.write('This is Ali.\n')<br>
+fileWriter.close()<br>
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')<br>
+fileWriter.write('Hello to you!')<br>
+fileWriter.write('\n')<br>
+fileWriter.write('How is everything?\n')<br>
+fileWriter.seek(15)<br>
+fileWriter.write('This is Ali.\n')<br>
+fileWriter.write('We are testing some new things.\n')<br>
+fileWriter.close()<br>
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')<br>
 fileWriter.writelines(['Hello to you!', 'How is everything?', 'This is Ali.', 
                        'We are testing some new things.'])
-fileWriter.close()
-?open.writelines
-?fileWriter.writelines
-help(fileWriter.writelines)
-fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter.close()<br>
+?open.writelines<br>
+?fileWriter.writelines<br>
+help(fileWriter.writelines)<br>
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')<br>
 fileWriter.writelines(['Hello to you!', 'How is everything?', 'This is Ali.', 
                        'We are testing some new things.'], '\n')
 fileWriter.close()
-fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')
+fileWriter = open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt')<br>
 fileWriter.writelines(['Hello to you!\n', 
                        'How is everything?\n', 
                        'This is Ali.\n', 
