@@ -1510,22 +1510,22 @@ jsonData = '{"name":"John", "age":30, "car":null}'
 json.loads(jsonData)
 result = json.loads(jsonData)
 result['name']
-path = r'H:\Work\Python\Examples\2-Importing\cakes.json'
-json.load(path)
-jsonReader = open(path, 'rt')
-json.load(jsonReader)
-pd.read_json(jsonReader)
-pd.read_json(path)
-%clear
-url = 'http://www.omdbapi.com/?i=tt3896198&apikey=4fd5103f'
-requests.get(utl + '&t=batman+the+dark+knight')
-requests.get(url + '&t=batman+the+dark+knight')
-resp = requests.get(url + '&t=batman+the+dark+knight')
-resp
-resp.text
-resp.json()
-result = resp.json()
-result['Year']
+path = r'H:\Work\Python\Examples\2-Importing\cakes.json'<br>
+json.load(path)<br>
+jsonReader = open(path, 'rt')<br>
+json.load(jsonReader)<br>
+pd.read_json(jsonReader)<br>
+pd.read_json(path)<br>
+%clear<br>
+url = 'http://www.omdbapi.com/?i=tt3896198&apikey=4fd5103f'<br>
+requests.get(utl + '&t=batman+the+dark+knight')<br>
+requests.get(url + '&t=batman+the+dark+knight')<br>
+resp = requests.get(url + '&t=batman+the+dark+knight')<br>
+resp<br>
+resp.text<br>
+resp.json()<br>
+result = resp.json()<br>
+result['Year']<br>
 
 
 
