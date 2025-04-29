@@ -239,14 +239,14 @@ np.arange(12)<br>
 np.arange(12).reshape(2, 6)<br>
 np2d = np.arange(12).reshape(2, 6)<br>
 np2d<br>
-np2d.reshape(-1,)  *reshape 2 dimension into one dimension*
-np2d.reshape(3, 4)
-np2d = np2d.reshape(3, 4)
-np2d
-# Slicing in NUMPY
-np2d[1]
-np2d[1][2]
-np2d[1, 2]
+np2d.reshape(-1,)  *reshape 2 dimension into one dimension*<br>
+np2d.reshape(3, 4)<br>
+np2d = np2d.reshape(3, 4)<br>
+np2d<br>
+# Slicing in NUMPY<br>
+np2d[1]<br>
+np2d[1][2]<br>
+np2d[1, 2]<br>
 np2d
 np2d[2]
 np2d[2][:]
