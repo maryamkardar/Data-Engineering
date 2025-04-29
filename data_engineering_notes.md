@@ -1200,7 +1200,7 @@ fileHandler.close()<br>
 fileHandler = open(r'H:\Work\Python\Examples\2-Importing\Story.txt', 'rt')<br>
 fileHandler.readlines(100)<br>
 fileHandler.readline()<br>
-fileHandler.close()<br><br>
+fileHandler.close()<br>
 fileHandler = open(r'H:\Work\Python\Examples\2-Importing\Story.txt', 'rt')<br>
 lines = fileHandler.readlines()<br>
 lines<br>
@@ -1295,6 +1295,7 @@ fileWriter.seek(0)
 fileWriter.read()
 fileWriter.write('. this is me.')
 fileWriter.close()
+# lock
 with open(r'H:\Work\Python\Examples\2-Importing\empty.txt', 'wt+') as fileHandler:
     fileHandler.write('ali sadeghi')
     fileHandler.seek(0)
@@ -1387,8 +1388,6 @@ ExcelReader.parse(sheet_name='Sheet1', index_col=0, usecols=[1, 2], skipfooter=1
 ExcelReader.parse(sheet_name='Sheet1', index_col=0, usecols=[1, 2], 
                   skipfooter=1, skiprows=1, header=0)
 ExcelReader.parse(sheet_name='Sheet1', usecols=[1, 2], 
-                  skipfooter=1, skiprows=1, header=['Name', 'Family'])
-ExcelReader.parse(sheet_name='Sheet1', usecols=[1, 2], 
                   skipfooter=1, skiprows=1, names = ['Name', 'Family'])
 path = r'H:\Work\Python\Examples\2-Importing\battledeath.xlsx'
 ExcelReader = pd.ExcelFile(path)
@@ -1453,6 +1452,7 @@ mat = scipy.io.matlab.loadmat(path)
 mat
 mat['cfpCyt']
 type(mat['cfpCyt'])
+## API
 from requests import urlretrive
 from Request import urlretrive
 from urllib.request import urlretrive
