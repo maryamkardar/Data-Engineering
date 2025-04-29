@@ -305,11 +305,11 @@ np.mean(nums)
 nums.mean()
 np.std(nums)
 nums.std()
-np.abs([-12, 2, 5, -3])
-[-12, 2, 5, -3].abs()
-np.array([-12, 2, 5, -3]).abs()
-np.max(nums)
-nums.max()
+np.abs([-12, 2, 5, -3])<br>
+[-12, 2, 5, -3].abs()<br>
+np.array([-12, 2, 5, -3]).abs()<br>
+np.max(nums)<br>
+nums.max()<br>
 np.median(nums)
 nums.median()
 %clear
