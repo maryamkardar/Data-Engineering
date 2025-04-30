@@ -1565,33 +1565,34 @@ import pandas.io.sql<br>
 import pyodbc<br>
 
 """
-Created on Fri Nov  8 14:20:24 2024
+Created on Fri Nov  8 14:20:24 2024<br>
 
-@author: ali sadeghi aghili
+@author: ali sadeghi aghili<br>
 """
 
-import pandas.io.sql
-import pyodbc
+import pandas.io.sql<br>
+import pyodbc<br>
 
-# Parameters
-server = 'SB2\MSSQLSERVER19TAB'
-db = 'AdventureWorksDW2020'
-#port=...
-#user=...
-#pass=...
+# Parameters<br>
+server = 'SB2\MSSQLSERVER19TAB'<br>
+db = 'AdventureWorksDW2020'<br>
+#port=...<br>
+#user=...<br>
+#pass=...<br>
 
-# Create the connection
-conn = pyodbc.connect('DRIVER={SQL Server};SERVER=' + server + ';DATABASE=' + db + ';Trusted_Connection=yes')
-sql = """
-select * from [dbo].[FactCallCenter]
-"""
-df = pandas.io.sql.read_sql(sql, conn)
-df
-df.to_sql('new', conn)
-df.to_sql('new', con)
-khoraki = ['pofak', 'chips', 'shokolat', 'chips', 'adams', 'lavashak', 'pofak', 'choob shoor']
-set(khoraki)
-khorakiSet = set(khoraki)
+# Create the connection<br>
+conn = pyodbc.connect('DRIVER={SQL Server};SERVER=' + server + ';DATABASE=' + db + ';Trusted_Connection=yes')<br>
+sql = """<br>
+select * from [dbo].[FactCallCenter]<br>
+"""<br>
+df = pandas.io.sql.read_sql(sql, conn)<br>
+df<br>
+df.to_sql('new', conn)<br>
+# pandas prefers an SQLAlchemy engine or connection, not a raw pyodbc connection<br>
+df.to_sql('new', con)<br>
+khoraki = ['pofak', 'chips', 'shokolat', 'chips', 'adams', 'lavashak', 'pofak', 'choob shoor']<br>
+set(khoraki)<br>
+khorakiSet = set(khoraki)<br>
 khorakiSet.add('pashmak')
 khorakiSet
 khorakiSet.add('pashmak')
