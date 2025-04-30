@@ -247,28 +247,28 @@ np2d<br>
 np2d[1]<br>
 np2d[1][2]<br>
 np2d[1, 2]<br>
-np2d
-np2d[2]
-np2d[2][:]
-np2d[2, :]
-np2d
-np2d[:,2]
-%clear
-np2d
-np2d.transpose()
-np2d.T
-%clear
-weight
-height
-npWeight = np.array(weight)
-npHeight = np.array(height)
-BMI = npWeight / npHeight ** 2
-BMI
-BMI = npWeight * 0.453592 / (npHeight * 0.0254) ** 2
-BMI
-np.array([weight, height])
-np.array([weight, height]).T
-np.array([weight, height]).T * np.array([0.453592, 0.0254])
+np2d<br>
+np2d[2]<br>
+np2d[2][:]<br>
+np2d[2, :]<br>
+np2d<br>
+np2d[:,2]<br>
+%clear<br>
+np2d<br>
+np2d.transpose()<br>
+np2d.T<br>
+%clear<br>
+weight<br>
+height<br>
+npWeight = np.array(weight)<br>
+npHeight = np.array(height)<br>
+BMI = npWeight / npHeight ** 2<br>
+BMI<br>
+BMI = npWeight * 0.453592 / (npHeight * 0.0254) ** 2<br>
+BMI<br>
+np.array([weight, height])<br>
+np.array([weight, height]).T<br>
+np.array([weight, height]).T * np.array([0.453592, 0.0254])<br>
 info = np.array([weight, height]).T * np.array([0.453592, 0.0254])
 info [:, 1] / info[:, 2] ** 2
 info [:, 0] / info[:, 1] ** 2
