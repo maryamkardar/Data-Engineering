@@ -1527,7 +1527,451 @@ resp.json()<br>
 result = resp.json()<br>
 result['Year']<br>
 
+## ---(Fri Nov  8 14:03:00 2024)---
+# ORM
+import sqlalchemy as sa
+con = 'mssql+pyodbc://sa:1234@SB2\MSSQLSERVER19TAB/AdventureWorksDW2020?driver=SQL+Server+Native+Client+11.0'
+engine = sa.create_engine(con)
+connection= engine.connect()
+stmt = sa.text('select * from DimAccount')
+stmt
+proxy = connection.execute(stmt)
+proxy
+proxy.fetchall()
+proxy = connection.execute(stmt)
+results= proxy.fetchall()
+results
+stmt = sa.text('select * from FactCallCenter')
+proxy = connection.execute(stmt)
+proxy.fetchall()
+from sqlalchemy import Inspector
+sa.Inspector()
+import pandas as pd
+pd.read_sql(stmt, connection)
+df = pd.read_sql(stmt, connection)
+import sqlalchemy as sa
+from sqlalchemy import Inspector
+con = 'mssql+pyodbc://sa:1234@SB2\MSSQLSERVER19TAB/AdventureWorksDW2020?driver=SQL+Server+Native+Client+11.0'
+engine = sa.create_engine(con)
+metadata = sa.MetaData()
+metadata
+address = sa.Table('New', metadata, schema = 'dbo', autoload=True, autoload_with=engine)
+sa.inspect()
+sa.inspector.get_table_names()
+sa.inspect()
+sa.inspect(engine)
+sa.inspect(engine).get_table_names()
+import pandas.io.sql
+import pyodbc
 
+"""
+Created on Fri Nov  8 14:20:24 2024
+
+@author: ali sadeghi aghili
+"""
+
+import pandas.io.sql
+import pyodbc
+
+# Parameters
+server = 'SB2\MSSQLSERVER19TAB'
+db = 'AdventureWorksDW2020'
+#port=...
+#user=...
+#pass=...
+
+# Create the connection
+conn = pyodbc.connect('DRIVER={SQL Server};SERVER=' + server + ';DATABASE=' + db + ';Trusted_Connection=yes')
+sql = """
+select * from [dbo].[FactCallCenter]
+"""
+df = pandas.io.sql.read_sql(sql, conn)
+df
+df.to_sql('new', conn)
+df.to_sql('new', con)
+khoraki = ['pofak', 'chips', 'shokolat', 'chips', 'adams', 'lavashak', 'pofak', 'choob shoor']
+set(khoraki)
+khorakiSet = set(khoraki)
+khorakiSet.add('pashmak')
+khorakiSet
+khorakiSet.add('pashmak')
+khorakiSet
+khorakiSet.add('pofak')
+khorakiSet
+khorakiSet.update(['chips', 'maste moosir', 'pastil'])
+khorakiSet
+khorakiSet.pop()
+khorakiSet.discard('pashmak')
+khorakiSet
+khorakiSet.discard('pashmak')
+khorakiSet.discard('pastil')
+khorakiSet
+khorakiSet.discard('pastil')
+aliAte = ['pofak', 'chips', 'adams']
+hassanAte = ['chips', 'mast moosir', 'pofak']
+aliAte.union(hassanAte)
+aliAte = set(['pofak', 'chips', 'adams'])
+hassanAte = set(['chips', 'mast moosir', 'pofak'])
+aliAte.union(hassanAte)
+runcell(0, 'C:/Users/alisa/untitled3.py')
+aliAte.intersection(hassanAte)
+hassanAte.intersection(aliAte)
+aliAte
+aliAte.difference(hassanAte)
+hassanAte.difference(aliAte)
+%clear
+# defaultdict
+{'key':'value'}
+statesDict = {}
+for state, city in city_list:
+    if state not in statesDict:
+        statesDict[state] = city
+    else:
+        statesDict[state].apend(city)
+city_list = [('TX','Austin'), ('TX','Houston'), ('NY','Albany'), 
+             ('NY', 'Syracuse'), ('NY', 'Buffalo'), ('NY', 'Rochester'), 
+             ('TX', 'Dallas'), ('CA','Sacramento'), ('CA', 'Palo Alto'), 
+             ('GA', 'Atlanta')]
+
+statesDict = {}
+for state, city in city_list:
+    if state not in statesDict:
+        statesDict[state] = city
+    else:
+        statesDict[state].apend(city)
+city_list = [('TX','Austin'), ('TX','Houston'), ('NY','Albany'), 
+             ('NY', 'Syracuse'), ('NY', 'Buffalo'), ('NY', 'Rochester'), 
+             ('TX', 'Dallas'), ('CA','Sacramento'), ('CA', 'Palo Alto'), 
+             ('GA', 'Atlanta')]
+
+statesDict = {}
+for state, city in city_list:
+    if state not in statesDict:
+        statesDict[state] = city
+    else:
+        statesDict[state].append(city)
+statesDict = {}
+for state, city in city_list:
+    if state not in statesDict:
+        statesDict[state] = [city]
+    else:
+        statesDict[state].append(city)
+statesDict
+from collections import defaultdict
+statesDict2 = defaultdict(list)
+statesDict = {}
+for state, city in city_list:
+    if state not in statesDict:
+        statesDict[state] = []
+    statesDict[state].append(city)
+statesDict
+for state, city in city_list:
+    statesDict[state].append(city)
+for state, city in city_list:
+    statesDict2[state].append(city)
+statesDict = {}
+for state, city in city_list:
+    if state not in statesDict:
+        statesDict[state] = []
+    statesDict[state].append(city)
+statesDict
+statesDict2
+statesDict2['TX']
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols='lang')
+tweets
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols='Lang')
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols=['Lang'])
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols=['lang'])
+tweets
+tweets.lang
+langDict = {}
+for lang in tweets.lang:
+    if lang not in langDict:
+        langDict[lang] = 1
+    else:
+        langDict[lang] += 1
+langDict
+from collections import Counter
+Counter(tweets.lang)
+Counter(tweets.lang).most_common(1)
+Counter(tweets.lang).most_common(2)
+bday = '1988/08/27'
+type(bday)
+datetime.strptime(bday, '%Y/%m/%d')
+from datetime import datetime
+bday = '1988/08/27'
+datetime.strptime(bday, '%Y/%m/%d')
+dates = ['02/19/2001',
+ '04/10/2001',
+ '05/30/2001',
+ '07/19/2001',
+ '09/07/2001',
+ '10/27/2001',
+ '12/16/2001',
+ '02/04/2002',
+ '03/26/2002',
+ '05/15/2002',
+ '07/04/2002',
+ '08/23/2002',
+ '10/12/2002',
+ '12/01/2002',
+ '01/20/2003',
+ '03/11/2003',
+ '04/30/2003',
+ '06/19/2003',
+ '08/08/2003',
+ '09/27/2003',
+ '11/16/2003',
+ '01/05/2004',
+ '02/24/2004',
+ '04/14/2004',
+ '06/03/2004',
+ '07/23/2004',
+ '09/11/2004',
+ '10/31/2004',
+ '12/20/2004',
+ '02/08/2005',
+ '03/30/2005',
+ '05/19/2005',
+ '07/08/2005',
+ '08/27/2005',
+ '10/16/2005',
+ '12/05/2005',
+ '01/24/2006',
+ '03/15/2006',
+ '05/04/2006',
+ '06/23/2006',
+ '08/12/2006',
+ '10/01/2006',
+ '11/20/2006',
+ '01/09/2007',
+ '02/28/2007',
+ '04/19/2007',
+ '06/08/2007',
+ '07/28/2007',
+ '09/16/2007',
+ '11/05/2007',
+ '12/25/2007',
+ '02/13/2008',
+ '04/03/2008',
+ '05/23/2008',
+ '07/12/2008',
+ '08/31/2008',
+ '10/20/2008',
+ '12/09/2008',
+ '01/28/2009',
+ '03/19/2009',
+ '05/08/2009',
+ '06/27/2009',
+ '08/16/2009',
+ '10/05/2009',
+ '11/24/2009',
+ '01/13/2010',
+ '03/04/2010',
+ '04/23/2010',
+ '06/12/2010',
+ '08/01/2010',
+ '09/20/2010',
+ '11/09/2010',
+ '12/29/2010',
+ '02/17/2011',
+ '04/08/2011',
+ '05/28/2011',
+ '07/17/2011',
+ '09/05/2011',
+ '10/24/2011',
+ '11/12/2011',
+ '01/01/2012',
+ '02/20/2012',
+ '04/10/2012',
+ '05/30/2012',
+ '07/19/2012',
+ '09/07/2012',
+ '10/27/2012',
+ '12/16/2012',
+ '02/04/2013',
+ '03/26/2013',
+ '05/15/2013',
+ '07/04/2013',
+ '08/23/2013',
+ '10/12/2013',
+ '12/01/2013',
+ '01/20/2014',
+ '03/11/2014',
+ '04/30/2014',
+ '06/19/2014',
+ '08/08/2014',
+ '09/27/2014',
+ '11/16/2014',
+ '07/05/2014',
+ '01/24/2015',
+ '03/15/2015',
+ '05/04/2015',
+ '06/23/2015',
+ '08/12/2015',
+ '10/01/2015',
+ '11/20/2015',
+ '01/09/2016',
+ '02/28/2016',
+ '04/18/2016',
+ '06/07/2016',
+ '07/27/2016',
+ '09/15/2016',
+ '11/04/2016']
+datetime.strptime(bday, '%Y-%m/%d')
+bday = '1988-08/27'
+datetime.strptime(bday, '%Y-%m/%d')
+bday = '1988 08/27'
+datetime.strptime(bday, '%Y %m/%d')
+date
+dates
+[datetime.strptime(date, '%m/%d/%Y') for date in dates]
+dated = [datetime.strptime(date, '%m/%d/%Y') for date in dates]
+dated
+bdayDated = datetime.strptime(bday, '%Y %m/%d')
+bdayDated
+datetime.strftime(bdayDated, '%B')
+datetime.strftime(bdayDated, '%B %d')
+datetime.strftime(bdayDated, '%B %d, %Y')
+datetime.strftime(bdayDated, '%A')
+%clear
+bdayDated
+# TimeZone naive
+bdayDated.year
+bdayDated.month
+bdayDated.hour
+bdayDated.tzinfo
+datetime.now()
+now = datetime.now()
+now
+datetime.utcnow()
+%clear
+import pytz
+pytz.all_timezones
+len(pytz.all_timezones)
+now
+now.tzinfo
+# localize
+zone = pytz.timezone('Iran')
+zone
+zone.localize(now)
+now
+now = zone.localize(now)
+now
+now.tzinfo
+bdayDated
+bdayDated = zone.localize(bdayDated)
+bdayDated
+now
+now.astimezone(pytz.timezone('Asia/Istanbul'))
+now.astimezone(pytz.timezone('Japan'))
+now.tzinfo
+now
+now.replace(year = 2023)
+now.replace(tzinfo = pytz.timezone('Japan'))
+# time delta
+from datetime import datetime, timedelta
+now - bdayDated
+# epoch
+# 1970-01-01
+now
+now.replace(year = 2025)
+now + timedelta(days = 365)
+[now + timedelta(days = day) for day in range(366)]
+pytz.all_timezones
+now - bdayDated
+now + timedelta(days = 365)
+# datetime manipultion
+# string manipulation
+# Regular Expressions
+# NLP: Natural Language Processing
+%clear
+import re
+text = '''101 COM Computer
+205 MAT Mathematics
+189 ENG English'''
+newLine = re.complie(pattern = '\n')
+spaces = re.complie(pattern = '\s+')
+newLine = re.compile(pattern = '\n')
+spaces = re.compile(pattern = '\s+')
+newLine
+spaces
+re.split(pattern=newLine, string=text)
+re.split(pattern=spaces, string=text)
+re.split(pattern=r'\n', string=text)
+re.findall(pattern = r'\d+', string = text)
+re.search(pattern = r'\d+', string = text)
+result = re.search(pattern = r'\d+', string = text)
+result.group()
+result.start()
+result.end()
+result.span()
+# greed
+re.search(pattern = r'\d+', string = text)
+re.match(pattern = r'\d+', string = text)
+re.search(pattern = r'\n+', string = text)
+re.match(pattern = r'\n+', string = text)
+# ^\d+
+# \d+
+# ^\n+
+re.match(pattern = r'\n+', string = text)
+# \n+
+re.search(pattern = r'\n+', string = text)
+re.sub(pattern=r'(?!\n)\s', repl='\t', string=text)
+from sys import stdout
+stdout.write(re.sub(pattern=r'(?!\n)\s', repl='\t', string=text))
+pattern = re.compile(r'\d+\s[A-Z]{3}\s[A-Z][a-z]+')
+re.findall(pattern, string = text)
+pattern = re.compile(r'(\d+)\s([A-Z]{3})\s([A-Z][a-z]+)')
+re.findall(pattern, string = text)
+re.findall(pattern, string = text).group()
+re.search(pattern, string = text).group()
+re.search(pattern, string = text).group(0)
+re.search(pattern, string = text).group(1)
+re.search(pattern, string = text).group(2)
+re.search(pattern, string = text).group(3)
+sentence = 'ali dar dar jahad daneshgahi daneshgahi tadris mi konad konad'
+re.search(pattern, string = text).group(0)
+re.search(pattern, string = text).group(1)
+re.search(pattern, string = text).group(2)
+re.search(pattern, string = text).group(3)
+re.sub(string=sentence, pattern = r'(\w+)\s\1', repl = '\g<1>')
+re.sub(string=sentence, pattern = r'(\w{2,})\s\1', repl = '\g<1>')
+pd.read_excel(r'H:\Work\Python\Examples\3-Cleansing\CrossTable.xlsx')
+df = pd.read_excel(r'H:\Work\Python\Examples\3-Cleansing\CrossTable.xlsx')
+df.melt(id_vars = 'Product', var_name='MonthYear', value_name = 'Sell')
+melted = df.melt(id_vars = 'Product', var_name='MonthYear', value_name = 'Sell')
+melted.pivot(index='Product', columns = 'MonthYear', values = 'Sell')
+%clear
+melted
+melted.MonthYear
+re.split(pattern=\s, string=melted.MonthYear)
+re.split(pattern='\s', string=melted.MonthYear)
+[re.split(pattern='\s', string=MonthYear) for MonthYear in melted.MonthYear]
+'ali sadeghi'.split(' ')
+melted.MonthYear.str.split(' ')
+a, b = melted.MonthYear.str.split(' ')
+melted.MonthYear.str.split(' ').get(0)
+melted.MonthYear.str.split(' ').str.get(0)
+melted.MonthYear.str.split(' ')
+melted.MonthYear.str.split(' ').str.get(0)
+melted['Month'] = melted.MonthYear.str.split(' ').str.get(0)
+melted
+melted['Year'] = melted.MonthYear.str.split(' ').str.get(1)
+melted
+[Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]
+melted['YearMonth ']= [Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]
+del melted['YearMonth ']
+melted['YearMonth']= [Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]
+melted
+melted['YearMonth']= [Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]
+songs = pd.read_csv(r'H:\Work\Python\Examples\5-Manipulation\stage_songs.csv')
+writers = pd.read_csv(r'H:\Work\Python\Examples\5-Manipulation\stage_writers.csv')
+songs
+writers
+song.merge(writers, left_on = 'Music', right_on = 'song', how = 'inner')
+songs.merge(writers, left_on = 'Music', right_on = 'song', how = 'inner')
+result = songs.merge(writers, left_on = 'Music', right_on = 'song', how = 'inner')
 
 
 
