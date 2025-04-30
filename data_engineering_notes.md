@@ -1545,24 +1545,24 @@ stmt = sa.text('select * from FactCallCenter')<br>
 proxy = connection.execute(stmt)<br>
 proxy.fetchall()<br>
 from sqlalchemy import Inspector<br>
-sa.Inspector()
-import pandas as pd
-pd.read_sql(stmt, connection)
-df = pd.read_sql(stmt, connection)
-import sqlalchemy as sa
-from sqlalchemy import Inspector
-con = 'mssql+pyodbc://sa:1234@SB2\MSSQLSERVER19TAB/AdventureWorksDW2020?driver=SQL+Server+Native+Client+11.0'
-engine = sa.create_engine(con)
-metadata = sa.MetaData()
-metadata
-address = sa.Table('New', metadata, schema = 'dbo', autoload=True, autoload_with=engine)
-sa.inspect()
-sa.inspector.get_table_names()
-sa.inspect()
-sa.inspect(engine)
-sa.inspect(engine).get_table_names()
-import pandas.io.sql
-import pyodbc
+sa.Inspector()<br>
+import pandas as pd<br>
+pd.read_sql(stmt, connection)<br>
+df = pd.read_sql(stmt, connection)<br>
+import sqlalchemy as sa<br>
+from sqlalchemy import Inspector<br>
+con = 'mssql+pyodbc://sa:1234@SB2\MSSQLSERVER19TAB/AdventureWorksDW2020?driver=SQL+Server+Native+Client+11.0'<br>
+engine = sa.create_engine(con)<br>
+metadata = sa.MetaData()<br>
+metadata<br>
+address = sa.Table('New', metadata, schema = 'dbo', autoload=True, autoload_with=engine)<br>
+sa.inspect()<br>
+sa.inspector.get_table_names()<br>
+sa.inspect()<br>
+sa.inspect(engine)<br>
+sa.inspect(engine).get_table_names()<br>
+import pandas.io.sql<br>
+import pyodbc<br>
 
 """
 Created on Fri Nov  8 14:20:24 2024
