@@ -1527,24 +1527,24 @@ resp.json()<br>
 result = resp.json()<br>
 result['Year']<br>
 
-## ---(Fri Nov  8 14:03:00 2024)---
-# ORM
-import sqlalchemy as sa
-con = 'mssql+pyodbc://sa:1234@SB2\MSSQLSERVER19TAB/AdventureWorksDW2020?driver=SQL+Server+Native+Client+11.0'
-engine = sa.create_engine(con)
-connection= engine.connect()
-stmt = sa.text('select * from DimAccount')
-stmt
-proxy = connection.execute(stmt)
-proxy
-proxy.fetchall()
-proxy = connection.execute(stmt)
-results= proxy.fetchall()
-results
-stmt = sa.text('select * from FactCallCenter')
-proxy = connection.execute(stmt)
-proxy.fetchall()
-from sqlalchemy import Inspector
+## ---(Fri Nov  8 14:03:00 2024)---<br>
+# ORM<br>
+import sqlalchemy as sa<br>
+con = 'mssql+pyodbc://sa:1234@SB2\MSSQLSERVER19TAB/AdventureWorksDW2020?driver=SQL+Server+Native+Client+11.0'<br>
+engine = sa.create_engine(con)<br>
+connection= engine.connect()<br>
+stmt = sa.text('select * from DimAccount')<br>
+stmt<br>
+proxy = connection.execute(stmt)<br>
+proxy<br>
+proxy.fetchall()<br>
+proxy = connection.execute(stmt)<br>
+results= proxy.fetchall()<br>
+results<br>
+stmt = sa.text('select * from FactCallCenter')<br>
+proxy = connection.execute(stmt)<br>
+proxy.fetchall()<br>
+from sqlalchemy import Inspector<br>
 sa.Inspector()
 import pandas as pd
 pd.read_sql(stmt, connection)
