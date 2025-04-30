@@ -5,7 +5,7 @@ First Session:🙌<br>
 print("your BMI is:",{BMI})<br>
 print(f"your BMI is: {BMI}")<br>
 print('your BMI is:' + str(BMI))<br>
-print("your BMI", BMI, sep= ":")<br>
+print("your BMI is", BMI, sep= ":")<br>
 
 cleaning console ---> ctrl + L<br>
 
@@ -1907,7 +1907,7 @@ result.group()
 result.start()
 result.end()
 result.span()
-# greed
+# greedy
 re.search(pattern = r'\d+', string = text)
 re.match(pattern = r'\d+', string = text)
 re.search(pattern = r'\n+', string = text)
