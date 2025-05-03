@@ -1819,28 +1819,28 @@ dates = ['02/19/2001',
  '07/27/2016',
  '09/15/2016',
  '11/04/2016']
-datetime.strptime(bday, '%Y-%m/%d')
-bday = '1988-08/27'
-datetime.strptime(bday, '%Y-%m/%d')
-bday = '1988 08/27'
-datetime.strptime(bday, '%Y %m/%d')
-date
-dates
-[datetime.strptime(date, '%m/%d/%Y') for date in dates]
-dated = [datetime.strptime(date, '%m/%d/%Y') for date in dates]
-dated
-bdayDated = datetime.strptime(bday, '%Y %m/%d')
-bdayDated
-datetime.strftime(bdayDated, '%B')
-datetime.strftime(bdayDated, '%B %d')
-datetime.strftime(bdayDated, '%B %d, %Y')
-datetime.strftime(bdayDated, '%A')
-%clear
-bdayDated
-# TimeZone naive
-bdayDated.year
-bdayDated.month
-bdayDated.hour
+datetime.strptime(bday, '%Y-%m/%d')<br>
+bday = '1988-08/27'<br>
+datetime.strptime(bday, '%Y-%m/%d')<br>
+bday = '1988 08/27'<br>
+datetime.strptime(bday, '%Y %m/%d')<br>
+date<br>
+dates<br>
+[datetime.strptime(date, '%m/%d/%Y') for date in dates]<br>
+dated = [datetime.strptime(date, '%m/%d/%Y') for date in dates]<br>
+dated<br>
+bdayDated = datetime.strptime(bday, '%Y %m/%d')<br>
+bdayDated<br>
+datetime.strftime(bdayDated, '%B')<br>
+datetime.strftime(bdayDated, '%B %d')<br>
+datetime.strftime(bdayDated, '%B %d, %Y')<br>
+datetime.strftime(bdayDated, '%A')<br>
+%clear<br>
+bdayDated<br>
+# TimeZone naive<br>
+bdayDated.year<br>
+bdayDated.month<br>
+bdayDated.hour<br>
 bdayDated.tzinfo
 datetime.now()
 now = datetime.now()
