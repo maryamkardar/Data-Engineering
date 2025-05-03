@@ -1935,17 +1935,18 @@ sentence = 'ali dar dar jahad daneshgahi daneshgahi tadris mi konad konad'
 re.search(pattern, string = text).group(0)
 re.search(pattern, string = text).group(1)
 re.search(pattern, string = text).group(2)
-re.search(pattern, string = text).group(3)
-re.sub(string=sentence, pattern = r'(\w+)\s\1', repl = '\g<1>')
-re.sub(string=sentence, pattern = r'(\w{2,})\s\1', repl = '\g<1>')
-pd.read_excel(r'H:\Work\Python\Examples\3-Cleansing\CrossTable.xlsx')
-df = pd.read_excel(r'H:\Work\Python\Examples\3-Cleansing\CrossTable.xlsx')
-df.melt(id_vars = 'Product', var_name='MonthYear', value_name = 'Sell')
-melted = df.melt(id_vars = 'Product', var_name='MonthYear', value_name = 'Sell')
-melted.pivot(index='Product', columns = 'MonthYear', values = 'Sell')
-%clear
-melted
-melted.MonthYear
+re.search(pattern, string = text).group(3)<br>
+re.sub(string=sentence, pattern = r'(\w+)\s\1', repl = '\g<1>')<br>
+re.sub(string=sentence, pattern = r'(\w{2,})\s\1', repl = '\g<1>')<br>
+## pivot & unpivot(melt)
+pd.read_excel(r'H:\Work\Python\Examples\3-Cleansing\CrossTable.xlsx')<br>
+df = pd.read_excel(r'H:\Work\Python\Examples\3-Cleansing\CrossTable.xlsx')<br>
+df.melt(id_vars = 'Product', var_name='MonthYear', value_name = 'Sell')<br>
+melted = df.melt(id_vars = 'Product', var_name='MonthYear', value_name = 'Sell')<br>
+melted.pivot(index='Product', columns = 'MonthYear', values = 'Sell')<br>
+%clear<br>
+melted<br>
+melted.MonthYear<br>
 re.split(pattern=\s, string=melted.MonthYear)
 re.split(pattern='\s', string=melted.MonthYear)
 [re.split(pattern='\s', string=MonthYear) for MonthYear in melted.MonthYear]
