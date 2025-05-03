@@ -222,8 +222,8 @@ BMI = npWeights/(npHeights/100) ** 2<br>
 BMI<br>
 BMI[0]<br>
 BMI[1]<br>
-npHeights[0]
-type(npHeights)
+npHeights[0]<br>
+type(npHeights)<br>
 range(10)<br>
 type(range(10))<br>
 list(range(10))<br>
@@ -269,13 +269,13 @@ BMI<br>
 np.array([weight, height])<br>
 np.array([weight, height]).T<br>
 np.array([weight, height]).T * np.array([0.453592, 0.0254])<br>
-info = np.array([weight, height]).T * np.array([0.453592, 0.0254])
-info [:, 1] / info[:, 2] ** 2
-info [:, 0] / info[:, 1] ** 2
-2 > 3
-2 < 5
-[1, 2, 3, 4, 5, 6]
-[1, 2, 3, 4, 5, 6] > 3
+info = np.array([weight, height]).T * np.array([0.453592, 0.0254])<br>
+info [:, 1] / info[:, 2] ** 2<br>
+info [:, 0] / info[:, 1] ** 2<br>
+2 > 3<br>
+2 < 5<br>
+[1, 2, 3, 4, 5, 6]<br>
+[1, 2, 3, 4, 5, 6] > 3<br>
 # recycling
 # broadcasting
 np.array([1, 2, 3, 4, 5, 6])
