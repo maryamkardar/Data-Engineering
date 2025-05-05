@@ -529,12 +529,12 @@ if x < 2:
 else:
     flag = False
 
-flag
-x = 0
-if x < 2:
-    flag = True
-else:
-    flag = False
+flag<br>
+x = 0<br>
+if x < 2:<br>
+    flag = True<br>
+else:<br>
+    flag = False<br>
 
 flag
 x = 1
