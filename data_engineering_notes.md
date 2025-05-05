@@ -1497,19 +1497,19 @@ html = resp.text
 soup = BeautifulSoup(html)
 soup.find_all('a')
 result = soup.find_all('a')
-type(result)
-result[0]
-result[1]
-result[3]
-%clear
-[link for link soup.find_all('a')]
-[link for link in soup.find_all('a')]
-[link.get('href') for link in soup.find_all('a')]
-import json
-jsonData = '{"name":"John", "age":30, "car":null}'
-json.loads(jsonData)
-result = json.loads(jsonData)
-result['name']
+type(result)<br>
+result[0]<br>
+result[1]<br>
+result[3]<br>
+%clear<br>
+[link for link soup.find_all('a')]<br>
+[link for link in soup.find_all('a')]<br>
+[link.get('href') for link in soup.find_all('a')]<br>
+import json<br>
+jsonData = '{"name":"John", "age":30, "car":null}'<br>
+json.loads(jsonData)<br>
+result = json.loads(jsonData)<br>
+result['name']<br>
 path = r'H:\Work\Python\Examples\2-Importing\cakes.json'<br>
 json.load(path)<br>
 jsonReader = open(path, 'rt')<br>
