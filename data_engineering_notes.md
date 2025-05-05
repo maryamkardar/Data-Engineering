@@ -889,25 +889,25 @@ def mod2(num1, num2, num3):
     mod2 = num2 % 2
     mod3 = num3 % 2
     
-    return(mod1, mod2, mod3)
-mod(10, 11, 12)
-mod2(10, 11, 12)
-def mod(num):
-    return num % 2
+    return(mod1, mod2, mod3)<br>
+mod(10, 11, 12)<br>
+mod2(10, 11, 12)<br>
+def mod(num):<br>
+    return num % 2<br>
 
-def mod2(num1, num2, num3):
-    return(mod(num1), mod(num2), mod(num3))
-mod2(10, 11, 12)
-def mod2(num1, num2, num3):
-    def inner(num):
-        return num % 2
+def mod2(num1, num2, num3):<br>
+    return(mod(num1), mod(num2), mod(num3))<br>
+mod2(10, 11, 12)<br>
+def mod2(num1, num2, num3):<br>
+    def inner(num):<br>
+        return num % 2<br>
     
-    return(inner(num1), inner(num2), inner(num3))
-mod2(10, 11, 12)
-def xpowy(y):
-    def inner(x):
-        return x ** y
-    return inner
+    return(inner(num1), inner(num2), inner(num3))<br>
+mod2(10, 11, 12)<br>
+def xpowy(y):<br>
+    def inner(x):<br>
+        return x ** y<br>
+    return inner<br>
 xpowy(2)
 square = xpowy(2)
 square(12)
