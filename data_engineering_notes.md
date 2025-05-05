@@ -766,14 +766,14 @@ for value in teachers.iterrows():
 for rowIndex, row in teachers.iterrows():
     print(row)
     print("==============")
-for rowIndex, row in teachers.iterrows():
-    print(rowIndex)
-    print("==============")
-%clear
-teachers
-# DS: Ali Sadeghi Aghili
-# BI: Babak Pirooz
-for col in teachers.index:    
+for rowIndex, row in teachers.iterrows():<br>
+    print(rowIndex)<br>
+    print("==============")<br>
+%clear<br>
+teachers<br>
+# DS: Ali Sadeghi Aghili<br>
+# BI: Babak Pirooz<br>
+for col in teachers.index:<br>    
     print(col,teachers.loc[col,"name":"family"], sep=": ")
 for rowIndex, row in teachers.iterrows():    
     print(rowIndex, row,[:2], sep = ":")
