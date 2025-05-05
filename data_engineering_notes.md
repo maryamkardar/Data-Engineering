@@ -852,17 +852,17 @@ b
 c
 def powerBoth(num1, num2):
     tup = (num1 ** num2, num2 ** num1)
-    return tup
-powerBoth(2, 3)
-powerBoth(2, 3)[0]
-powerBoth(2, 3)[1]
-%clear
-tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv')
-import pandas as pd
-tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv')
-tweets
-tweets.lang
-langDict = {}
+    return tup<br>
+powerBoth(2, 3)<br>
+powerBoth(2, 3)[0]<br>
+powerBoth(2, 3)[1]<br>
+%clear<br>
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv')<br>
+import pandas as pd<br>
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv')<br>
+tweets<br>
+tweets.lang<br>
+langDict = {}<br>
 for lang in tweets.lang:
     print(lang)
 langDict = {}
