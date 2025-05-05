@@ -301,10 +301,10 @@ np.column_stack((npWeight, npHeight))
 np.row_stack((npWeight, npHeight))
 nums = np.arange(200)
 nums
-np.mean(nums)
-nums.mean()
-np.std(nums)
-nums.std()
+np.mean(nums)<br>
+nums.mean()<br>
+np.std(nums)<br>
+nums.std()<br>
 np.abs([-12, 2, 5, -3])<br>
 [-12, 2, 5, -3].abs()<br>
 np.array([-12, 2, 5, -3]).abs()<br>
