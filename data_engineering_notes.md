@@ -1947,14 +1947,14 @@ melted.pivot(index='Product', columns = 'MonthYear', values = 'Sell')<br>
 %clear<br>
 melted<br>
 melted.MonthYear<br>
-re.split(pattern=\s, string=melted.MonthYear)
-re.split(pattern='\s', string=melted.MonthYear)
-[re.split(pattern='\s', string=MonthYear) for MonthYear in melted.MonthYear]
-'ali sadeghi'.split(' ')
-melted.MonthYear.str.split(' ')
-a, b = melted.MonthYear.str.split(' ')
-melted.MonthYear.str.split(' ').get(0)
-melted.MonthYear.str.split(' ').str.get(0)
+re.split(pattern=\s, string=melted.MonthYear)<br>
+re.split(pattern='\s', string=melted.MonthYear)<br>
+[re.split(pattern='\s', string=MonthYear) for MonthYear in melted.MonthYear]<br>
+'ali sadeghi'.split(' ')<br>
+melted.MonthYear.str.split(' ')<br>
+a, b = melted.MonthYear.str.split(' ')<br>
+melted.MonthYear.str.split(' ').get(0)<br>
+melted.MonthYear.str.split(' ').str.get(0)<br>
 melted.MonthYear.str.split(' ')
 melted.MonthYear.str.split(' ').str.get(0)
 melted['Month'] = melted.MonthYear.str.split(' ').str.get(0)
