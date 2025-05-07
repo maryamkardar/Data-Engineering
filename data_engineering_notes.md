@@ -1605,23 +1605,23 @@ khorakiSet.pop()
 khorakiSet.discard('pashmak')
 khorakiSet
 khorakiSet.discard('pashmak')
-khorakiSet.discard('pastil')
-khorakiSet
-khorakiSet.discard('pastil')
-aliAte = ['pofak', 'chips', 'adams']
-hassanAte = ['chips', 'mast moosir', 'pofak']
-aliAte.union(hassanAte)
-aliAte = set(['pofak', 'chips', 'adams'])
-hassanAte = set(['chips', 'mast moosir', 'pofak'])
-aliAte.union(hassanAte)
-runcell(0, 'C:/Users/alisa/untitled3.py')
-aliAte.intersection(hassanAte)
-hassanAte.intersection(aliAte)
-aliAte
-aliAte.difference(hassanAte)
-hassanAte.difference(aliAte)
-%clear
-# defaultdict
+khorakiSet.discard('pastil')<br>
+khorakiSet<br>
+khorakiSet.discard('pastil')<br>
+aliAte = ['pofak', 'chips', 'adams']<br>
+hassanAte = ['chips', 'mast moosir', 'pofak']<br>
+aliAte.union(hassanAte)<br>
+aliAte = set(['pofak', 'chips', 'adams'])<br>
+hassanAte = set(['chips', 'mast moosir', 'pofak'])<br>
+aliAte.union(hassanAte)<br>
+runcell(0, 'C:/Users/alisa/untitled3.py')<br>
+aliAte.intersection(hassanAte)<br>
+hassanAte.intersection(aliAte)<br>
+aliAte<br>
+aliAte.difference(hassanAte)<br>
+hassanAte.difference(aliAte)<br>
+%clear<br>
+# defaultdict<br>
 {'key':'value'}
 statesDict = {}
 for state, city in city_list:
