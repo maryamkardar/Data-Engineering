@@ -1955,25 +1955,25 @@ melted.MonthYear.str.split(' ')<br>
 a, b = melted.MonthYear.str.split(' ')<br>
 melted.MonthYear.str.split(' ').get(0)<br>
 melted.MonthYear.str.split(' ').str.get(0)<br>
-melted.MonthYear.str.split(' ')
-melted.MonthYear.str.split(' ').str.get(0)
-melted['Month'] = melted.MonthYear.str.split(' ').str.get(0)
-melted
-melted['Year'] = melted.MonthYear.str.split(' ').str.get(1)
-melted
-[Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]
-melted['YearMonth ']= [Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]
-del melted['YearMonth ']
-melted['YearMonth']= [Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]
-melted
-melted['YearMonth']= [Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]
-songs = pd.read_csv(r'H:\Work\Python\Examples\5-Manipulation\stage_songs.csv')
-writers = pd.read_csv(r'H:\Work\Python\Examples\5-Manipulation\stage_writers.csv')
-songs
-writers
-song.merge(writers, left_on = 'Music', right_on = 'song', how = 'inner')
-songs.merge(writers, left_on = 'Music', right_on = 'song', how = 'inner')
-result = songs.merge(writers, left_on = 'Music', right_on = 'song', how = 'inner')
+melted.MonthYear.str.split(' ')<br>
+melted.MonthYear.str.split(' ').str.get(0)<br>
+melted['Month'] = melted.MonthYear.str.split(' ').str.get(0)<br>
+melted<br>
+melted['Year'] = melted.MonthYear.str.split(' ').str.get(1)<br>
+melted<br>
+[Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]<br>
+melted['YearMonth ']= [Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]<br>
+del melted['YearMonth ']<br>
+melted['YearMonth']= [Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]<br>
+melted<br>
+melted['YearMonth']= [Year + '-' + Month for Month, Year in zip(melted.Month, melted.Year)]<br>
+songs = pd.read_csv(r'H:\Work\Python\Examples\5-Manipulation\stage_songs.csv')<br>
+writers = pd.read_csv(r'H:\Work\Python\Examples\5-Manipulation\stage_writers.csv')<br>
+songs<br>
+writers<br>
+song.merge(writers, left_on = 'Music', right_on = 'song', how = 'inner')<br>
+songs.merge(writers, left_on = 'Music', right_on = 'song', how = 'inner')<br>
+result = songs.merge(writers, left_on = 'Music', right_on = 'song', how = 'inner')<br>
 
 
 
