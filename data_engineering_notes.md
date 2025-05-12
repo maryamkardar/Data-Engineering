@@ -276,11 +276,11 @@ info [:, 0] / info[:, 1] ** 2<br>
 2 < 5<br>
 [1, 2, 3, 4, 5, 6]<br>
 [1, 2, 3, 4, 5, 6] > 3<br>
-# recycling
-# broadcasting
-np.array([1, 2, 3, 4, 5, 6])
-np.array([1, 2, 3, 4, 5, 6]) > 3
-np.array([1, 2, 3, 4, 5, 6]) > np.array([3, 3, 3, 3, 3, 3])
+# recycling<br>
+# broadcasting<br>
+np.array([1, 2, 3, 4, 5, 6])<br>
+np.array([1, 2, 3, 4, 5, 6]) > 3<br>
+np.array([1, 2, 3, 4, 5, 6]) > np.array([3, 3, 3, 3, 3, 3])<br>
 BMI
 BMI < 22
 len(BMI)
