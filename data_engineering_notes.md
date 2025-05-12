@@ -283,9 +283,9 @@ np.array([1, 2, 3, 4, 5, 6]) > 3<br>
 np.array([1, 2, 3, 4, 5, 6]) > np.array([3, 3, 3, 3, 3, 3])<br>
 BMI
 BMI < 22
-len(BMI)
-BMI[BMI < 22]
-np.array([1, 2, 3, 4, 5, 6]) > 3
+len(BMI)<br>
+BMI[BMI < 22]<br>
+np.array([1, 2, 3, 4, 5, 6]) > 3<br>
 lst = np.array([1, 2, 3, 4, 5, 6])
 lst > 3
 lst[lst > 3]
