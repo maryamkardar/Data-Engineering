@@ -281,22 +281,22 @@ info [:, 0] / info[:, 1] ** 2<br>
 np.array([1, 2, 3, 4, 5, 6])<br>
 np.array([1, 2, 3, 4, 5, 6]) > 3<br>
 np.array([1, 2, 3, 4, 5, 6]) > np.array([3, 3, 3, 3, 3, 3])<br>
-BMI
-BMI < 22
+BMI<br>
+BMI < 22<br>
 len(BMI)<br>
 BMI[BMI < 22]<br>
 np.array([1, 2, 3, 4, 5, 6]) > 3<br>
 lst = np.array([1, 2, 3, 4, 5, 6])<br>
 lst > 3<br>
 lst[lst > 3]<br>
-info
-info.ndim
-info.shape
-info.size
-len(info)
-np.array([weight, height])
-npWeight
-npHeight
+info<br>
+info.ndim<br>
+info.shape<br>
+info.size<br>
+len(info)<br>
+np.array([weight, height])<br>
+npWeight<br>
+npHeight<br>
 np.column_stack((npWeight, npHeight))
 np.row_stack((npWeight, npHeight))
 nums = np.arange(200)
