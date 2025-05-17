@@ -326,10 +326,10 @@ np.dot(v1, v2)
 a1 = np.array([1, 2, 3, 4]).reshape(2, 2)
 a1
 a2 = np.array([1, 2, 3, 4]).reshape(2, 2)
-np.cross(a1, a2)
-np.matrix()
-np.matrix(range(100))
-np.matrix(range(100)).reshape(4, 25)
+np.cross(a1, a2)<br>
+np.matrix()<br>
+np.matrix(range(100))<br>
+np.matrix(range(100)).reshape(4, 25)<br>
 
 # Pandas
 import pandas as pd <br>
