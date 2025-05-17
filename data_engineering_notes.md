@@ -408,10 +408,10 @@ teachers
 teachers[1:3]
 teachers[1:]
 teachers['BI':'DB']
-teachers
-teachers['name']
-type(teachers['name'])
-teachers['age']
+teachers<br>
+teachers['name']<br>
+type(teachers['name'])<br>
+teachers['age']<br>
 teachers['major']
 teachers[['major', 'age']]
 teachers
