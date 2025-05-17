@@ -312,15 +312,15 @@ np.max(nums)<br>
 nums.max()<br>
 np.median(nums)
 nums.median()
-%clear
-height
-weight
-age
-position
-num1
-lst1
-v1
-v2
+%clear<br>
+height<br>
+weight<br>
+age<br>
+position<br>
+num1<br>
+lst1<br>
+v1<br>
+v2<br>
 v1 * v2
 np.dot(v1, v2)
 a1 = np.array([1, 2, 3, 4]).reshape(2, 2)
