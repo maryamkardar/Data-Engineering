@@ -493,19 +493,19 @@ not 5 == 12
 2 > 7 or 4 < 5
 nums
 nums = np.arange(10)
-nums
-numsu > 5
-nums > 5
-nums[nums > 5]
-nums
-nums > 2 and nums < 7
-# np.logical_and()
-# np.logical_or()
-# np.logical_not()
-np.logical_and(nums > 2, nums < 7)
-nums[np.logical_and(nums > 2, nums < 7)]
-nums
-%clear
+nums<br>
+numsu > 5<br>
+nums > 5<br>
+nums[nums > 5]<br>
+nums<br>
+nums > 2 and nums < 7<br>
+# np.logical_and<br>
+# np.logical_or()<br>
+# np.logical_not()<br>
+np.logical_and(nums > 2, nums < 7)<br>
+nums[np.logical_and(nums > 2, nums < 7)]<br>
+nums<br>
+%clear<br>
 cars
 cars['cars per cap']
 cars['cars per cap'] > 500
