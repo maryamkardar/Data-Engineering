@@ -1675,27 +1675,27 @@ for state, city in city_list:
     if state not in statesDict:
         statesDict[state] = []
     statesDict[state].append(city)
-statesDict
-statesDict2
-statesDict2['TX']
-tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols='lang')
-tweets
-tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols='Lang')
-tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols=['Lang'])
-tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols=['lang'])
-tweets
-tweets.lang
-langDict = {}
-for lang in tweets.lang:
-    if lang not in langDict:
-        langDict[lang] = 1
-    else:
-        langDict[lang] += 1
-langDict
-from collections import Counter
-Counter(tweets.lang)
-Counter(tweets.lang).most_common(1)
-Counter(tweets.lang).most_common(2)
+statesDict<br>
+statesDict2<br>
+statesDict2['TX']<br>
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols='lang')<br>
+tweets<br>
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols='Lang')<br>
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols=['Lang'])<br>
+tweets = pd.read_csv(r'H:\Work\Python\Examples\1-basics\tweets.csv', usecols=['lang'])<br>
+tweets<br>
+tweets.lang<br>
+langDict = {}<br>
+for lang in tweets.lang:<br>
+    if lang not in langDict:<br>
+        langDict[lang] = 1<br>
+    else:<br>
+        langDict[lang] += 1<br>
+langDict<br>
+from collections import Counter<br>
+Counter(tweets.lang)<br>
+Counter(tweets.lang).most_common(1)<br>
+Counter(tweets.lang).most_common(2)<br>
 bday = '1988/08/27'
 type(bday)
 datetime.strptime(bday, '%Y/%m/%d')
