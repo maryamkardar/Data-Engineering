@@ -321,11 +321,11 @@ num1<br>
 lst1<br>
 v1<br>
 v2<br>
-v1 * v2
-np.dot(v1, v2)
-a1 = np.array([1, 2, 3, 4]).reshape(2, 2)
-a1
-a2 = np.array([1, 2, 3, 4]).reshape(2, 2)
+v1 * v2<br>
+np.dot(v1, v2)<br>
+a1 = np.array([1, 2, 3, 4]).reshape(2, 2)<br>
+a1<br>
+a2 = np.array([1, 2, 3, 4]).reshape(2, 2)<br>
 np.cross(a1, a2)<br>
 np.matrix()<br>
 np.matrix(range(100))<br>
