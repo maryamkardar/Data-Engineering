@@ -310,8 +310,8 @@ np.abs([-12, 2, 5, -3])<br>
 np.array([-12, 2, 5, -3]).abs()<br>
 np.max(nums)<br>
 nums.max()<br>
-np.median(nums)
-nums.median()
+np.median(nums)<br>
+nums.median()<br>
 %clear<br>
 height<br>
 weight<br>
