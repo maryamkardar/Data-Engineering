@@ -433,8 +433,8 @@ df
 df[1:3]
 teachers[['name', 'family']][1:3]
 %clear
-# teachers.loc
-# teachers.iloc
+# teachers.loc<br>
+# teachers.iloc<br>
 teachers
 teachers.loc['DB']
 teachers.loc['name']
