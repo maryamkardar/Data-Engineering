@@ -403,17 +403,17 @@ teachers[1:,:]<br>
 teachers<br>
 teachers[1:]<br>
 teachers[1:3]<br>
-teachers[1:2]
-teachers
-teachers[1:3]
-teachers[1:]
-teachers['BI':'DB']
+teachers[1:2]<br>
+teachers<br>
+teachers[1:3]<br>
+teachers[1:]<br>
+teachers['BI':'DB']<br>
 teachers<br>
 teachers['name']<br>
 type(teachers['name'])<br>
 teachers['age']<br>
-teachers['major']
-teachers[['major', 'age']]
+teachers['major']<br>
+teachers[['major', 'age']]<br>
 teachers
 selectedColumns = [['name', 'family', 'age']]
 teachers[selectedColumns]
