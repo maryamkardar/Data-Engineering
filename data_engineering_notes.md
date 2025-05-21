@@ -414,25 +414,25 @@ type(teachers['name'])<br>
 teachers['age']<br>
 teachers['major']<br>
 teachers[['major', 'age']]<br>
-teachers
-selectedColumns = [['name', 'family', 'age']]
-teachers[selectedColumns]
-selectedColumns = ['name', 'family', 'age']
-teachers[selectedColumns]
-teachers.age
-teachers.name
-teachers.major
-teachers
-%clear
-teachers
-teachers[1:3]
-teachers[1:3][['name', 'family']]
-teachers[['name', 'family']]
-df = teachers[['name', 'family']]
-df
-df[1:3]
-teachers[['name', 'family']][1:3]
-%clear
+teachers<br>
+selectedColumns = [['name', 'family', 'age']]<br>
+teachers[selectedColumns]<br>
+selectedColumns = ['name', 'family', 'age']<br>
+teachers[selectedColumns]<br>
+teachers.age<br>
+teachers.name<br>
+teachers.major<br>
+teachers<br>
+%clear<br>
+teachers<br>
+teachers[1:3]<br>
+teachers[1:3][['name', 'family']]<br>
+teachers[['name', 'family']]<br>
+df = teachers[['name', 'family']]<br>
+df<br>
+df[1:3]<br>
+teachers[['name', 'family']][1:3]<br>
+%clear<br>
 # teachers.loc<br>
 # teachers.iloc<br>
 teachers
