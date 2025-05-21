@@ -469,21 +469,21 @@ cars
 cars[5:6]
 cars[5:6]['drives right']
 np.arange(5)
-nums = np.arange(5)
-nums
-nums[3]
-nums[-2]
-nums[-1]
-cars
-cars[-2:-1]
-cars[-2:-1]['drives right']
-cars
-%clear
-# >, <, ==, >=, <=, !=
-'ali' == 'Ali'
-3 < 12
-5 > 12
-# and, or, not
+nums = np.arange(5)<br>
+nums<br>
+nums[3]<br>
+nums[-2]<br>
+nums[-1]<br>
+cars<br>
+cars[-2:-1]<br>
+cars[-2:-1]['drives right']<br>
+cars<br>
+%clear<br>
+# >, <, ==, >=, <=, !=<br>
+'ali' == 'Ali'<br>
+3 < 12<br>
+5 > 12<br>
+# and, or, not<br>
 5 == 12
 not 5 == 12
 5 != 12
