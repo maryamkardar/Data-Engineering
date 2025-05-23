@@ -297,10 +297,10 @@ len(info)<br>
 np.array([weight, height])<br>
 npWeight<br>
 npHeight<br>
-np.column_stack((npWeight, npHeight))
-np.row_stack((npWeight, npHeight))
-nums = np.arange(200)
-nums
+np.column_stack((npWeight, npHeight))<br>
+np.row_stack((npWeight, npHeight))<br>
+nums = np.arange(200)<br>
+nums<br>
 np.mean(nums)<br>
 nums.mean()<br>
 np.std(nums)<br>
@@ -366,7 +366,7 @@ age = input('please enter your age: ' )<br>
 age<br>
 int(age)<br>
 
-## ---(Thu Oct 31 13:59:32 2024)---
+## ---(Thu Oct 31 13:59:32 2024)---<br>
 import pandas as pd<br>
 pd.read_csv('H:\Work\Python\Examples\1-basics\teachers.csv')<br>
 pd.read_csv('H:\\Work\\Python\\Examples\\1-basics\\teachers.csv')<br>
