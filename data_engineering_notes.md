@@ -435,16 +435,16 @@ teachers[['name', 'family']][1:3]<br>
 %clear<br>
 # teachers.loc<br>
 # teachers.iloc<br>
-teachers
-teachers.loc['DB']
-teachers.loc['name']
-teachers.loc[:, 'name']
-teachers.loc['DS']
-teachers.loc[['DS']]
-teachers.loc['BI':'DB']
-teachers.loc['BI':'DB', :]
-teachers.loc[:, 'name':'age']
-teachers.loc[:, ['name','age']]
+teachers<br>
+teachers.loc['DB']<br>
+teachers.loc['name']<br>
+teachers.loc[:, 'name']<br>
+teachers.loc['DS']<br>
+teachers.loc[['DS']]<br>
+teachers.loc['BI':'DB']<br>
+teachers.loc['BI':'DB', :]<br>
+teachers.loc[:, 'name':'age']<br>
+teachers.loc[:, ['name','age']]<br>
 teachers
 teachers.iloc[1:2, :]
 teachers.iloc[1:3, :]
