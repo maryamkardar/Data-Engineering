@@ -455,11 +455,11 @@ pd.read_csv(r'H:\Work\Python\Examples\1-basics\cars.csv') # raw text
 pd.read_csv(r'H:\Work\Python\Examples\1-basics\cars.csv', index_col = 0) # raw text
 cars = pd.read_csv(r'H:\Work\Python\Examples\1-basics\cars.csv', index_col = 0) # raw text
 %clear
-cars.country
-cars['country']
-cars[['country']]
-cars
-cars.iloc[:, 1]
+cars.country<br>
+cars['country']<br>
+cars[['country']]<br>
+cars<br>
+cars.iloc[:, 1]<br>
 cars
 cars.loc[:, 'country']
 cars.loc[:, 'country':'drives Right']
