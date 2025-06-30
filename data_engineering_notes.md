@@ -30,7 +30,7 @@ del variable, del names[0]-------> Delete a variable<br>
 
 Dictionary{Key:Value}<br>
 mydict = dict(zip(keys,values))<br>
-<br>
+
 mutable(changeable): List, Dict values, Set<br>
 immutable(unchangeable): Dict keys, tuples, floats, ints, strs,...<br>
 
