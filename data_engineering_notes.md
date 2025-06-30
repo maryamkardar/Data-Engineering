@@ -33,7 +33,7 @@ mydict = dict(zip(keys,values))<br>
 
 mutable(changeable): List, Dict values, Set<br>
 immutable(unchangeable): Dict keys, tuples, floats, ints, strs,...<br>
-<br>
+
 Functional Programming(FP) / Object_Oriented Programming (OOP)<br>
 
 *Piping/Chaining*<br>
