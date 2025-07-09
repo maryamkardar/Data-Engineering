@@ -8,7 +8,6 @@ print('your BMI is:' + str(BMI))<br>
 print("your BMI is", BMI, sep= ":")<br>
 
 cleaning console ---> ctrl + L<br>
-
 x1 = True<br>
 X2 = False<br>
 x1 + x2 = 0 + 1 = 1<br>
