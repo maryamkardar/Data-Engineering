@@ -1,7 +1,6 @@
 ## Data Processing with Python <br>
 
 First Session:🙌<br>
-
 print("your BMI is:",{BMI})<br>
 print(f"your BMI is: {BMI}")<br>
 print('your BMI is:' + str(BMI))<br>
