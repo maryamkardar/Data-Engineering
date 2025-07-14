@@ -48,6 +48,7 @@ def FuncName(arg):<br>
 Sometimes arg is not needed, <br>
 e.g: # Current date and time<br>
 now = datetime.now()<br>
+
 explanation about Functions:<br>
 help(sum)<br>
 ?sum<br>
