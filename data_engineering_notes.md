@@ -35,6 +35,7 @@ mutable(changeable): List, Dict values, Set<br>
 immutable(unchangeable): Dict keys, tuples, floats, ints, strs,...<br>
 
 Functional Programming(FP) / Object_Oriented Programming (OOP)<br>
+
 *Piping/Chaining*<br>
 Piping: Cat file.txt | grep "Keyword" | Sort<br>
 Chaining: # Chaining inbuilt functions<br>
