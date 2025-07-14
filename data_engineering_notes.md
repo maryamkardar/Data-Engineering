@@ -15,7 +15,7 @@ x1 + x2 = 0 + 1 = 1<br>
 
 str1 + str2 = Concat<br>
 
-Data type is very effective on the result.<br>
+Data type is very influential on the result.<br>
 
 #Defensive Programming : For preventing Errors<br>
 
