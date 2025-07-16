@@ -16,6 +16,7 @@ x1 + x2 = 0 + 1 = 1<br>
 str1 + str2 = Concat<br>
 
 Data type is very influential on the result.<br>
+
 #Defensive Programming : For preventing Errors<br>
 
 #Complex Types: List[], Dict{}<br>
