@@ -6,7 +6,6 @@ print("your BMI is:",{BMI})<br>
 print(f"your BMI is: {BMI}")<br>
 print('your BMI is:' + str(BMI))<br>
 print("your BMI is", BMI, sep= ":")<br>
-
 cleaning console ---> ctrl + L<br>
 
 x1 = True<br>
