@@ -22,7 +22,6 @@ Data type is very influential on the result.<br>
 #Complex Types: List[], Dict{}<br>
 list works with indexes<br>
 dict works with keys<br>
-
 #Slicing rules on List(names[a, b, c])<br>
 List[start:End] ----> End is exclusive<br>
 del variable, del names[0]-------> Delete a variable<br>
